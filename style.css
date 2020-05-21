@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html{
+    min-height: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #fafafa;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus{
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+/* Side Bar*/
+#sidebar.active {
+    margin-left: -250px;
+}
+.wrapper{
+	display: flex;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+#sidebar{
+	min-width: 250px;
+	max-width: 250px;
+    background: #1e1e1e;
+    color: white;
+    transition: all 0.3s;
+}
+#sidebar ul{
+    width: 100%;
+    list-style: none;
+}
+
+#sidebar .sidebar-header{
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 1px; 
+    font-weight: 600;   
+}
+#sidebar ul li{
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#sidebar ul.components{
+    padding: 0px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);b
+}
+
+#sidebar ul p{
+	color: #fff;
+	padding: 10px;
+}
+
+#sidebar ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 15px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+#sidebar ul ul li{
+    border-bottom: none;
+    margin-left: -40px;
+}
+
+#sidebar ul li a:hover{
+    color: cyan;
+    background: #1b1b1b;
+    border-left-color: cyan;
+}
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #ffffff;
+    background: #1e1e1e;
+}
+
+a[data-toggle="collapse"]{
+	position: relative;
+}
+
+.dropdown-toggle::after{
+	display: block;
+    position: absolute;
+	top: 50%;
+	right: 10%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+}
+.dropdown-toggle[aria-expanded="true"]::after{
+    transform: translateY(-50%) rotate(-180deg);
+}
+ul ul a{
+    font-size: 0.9em !important;
+    padding-left: 40px !important;
+    background: #1e1e1e;
+}
+.btn-info,
+.btn-info:hover,
+.btn-info:active,
+.btn-info:visited,
+.btn-info:focus {
+    background-color: #1e1e1e;
+    border-color: #1e1e1e;
+}
+
+#content{
+	width: 100%;
+	padding: 20px;
+	min-height: 100vh;
+	transition: all 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+
+    }
+    #sidebar.active {
+        margin-left: 0;
+        width: 100%;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+    #main-content {
+        display: none;
+    }
+}
