@@ -10,10 +10,10 @@ body{
 
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
+    font-size: 1em;
+    font-weight: 375;
     line-height: 1.7em;
-    color: #999;
+    color: black;
 }
 
 a,
@@ -26,7 +26,7 @@ a:focus{
 
 /* Side Bar*/
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: -375px;
 }
 .wrapper{
 	display: flex;
@@ -35,11 +35,17 @@ a:focus{
 }
 
 #sidebar{
-	min-width: 250px;
-	max-width: 250px;
-    background: #1e1e1e;
+	min-width: 375px;
+    max-width: 375px;
+    position: fixed;
+    height: 100%;
+    background: #121212;
     color: white;
     transition: all 0.3s;
+    -moz-box-shadow:    1px 1px 3px 0 #555;
+    -webkit-box-shadow: 1px 1px 3px 0 #555;
+    box-shadow:         1px 1px 3px 0 #555;
+    
 }
 #sidebar ul{
     width: 100%;
@@ -47,18 +53,41 @@ a:focus{
 }
 
 #sidebar .sidebar-header{
-    padding: 30px;
+    padding: 30px 30px 5px 30px;
     text-align: center;
-    letter-spacing: 1px; 
-    font-weight: 600;   
+    letter-spacing: 4px; 
+    font-weight: 600;  
+    font-size: 1.45em;
+    text-transform: uppercase;
+    
 }
+#sidebar .sidebar-button{
+    padding-top: 10px;
+}
+
+#sidebar .sidebar-avatar img{
+    text-align: center;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#sidebar .sidebar-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px; 
+    font-weight: 100; 
+    padding-bottom: 50px;
+}
+
 #sidebar ul li{
-    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 #sidebar ul.components{
     padding: 0px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);b
 }
 
 #sidebar ul p{
@@ -68,30 +97,36 @@ a:focus{
 
 #sidebar ul li a{
     position: relative;
-    color: white;
+    color: #aaaaaa;
     text-decoration: none;
-    font-size: 1.1em;
-    padding: 15px;
-    font-weight: 400;
+    font-size: 0.9em;
+    padding: 7px 0px 7px 20px;
+    font-weight: 500;
     display: block;
     width: 100%;
     border-left: 3px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #sidebar ul ul li{
     border-bottom: none;
     margin-left: -40px;
 }
+#sidebar .sidebar-icons{
+    color: #aaaaaa;
+    padding: 25px;
+}
 
 #sidebar ul li a:hover{
-    color: cyan;
+    color: white;
     background: #1b1b1b;
     border-left-color: cyan;
 }
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #ffffff;
-    background: #1e1e1e;
+    background: #121212;
 }
 
 a[data-toggle="collapse"]{
@@ -111,39 +146,69 @@ a[data-toggle="collapse"]{
 }
 ul ul a{
     font-size: 0.9em !important;
-    padding-left: 40px !important;
-    background: #1e1e1e;
+    padding-left: 85px !important;
+    background: #161616;
 }
 .btn-info,
 .btn-info:hover,
 .btn-info:active,
 .btn-info:visited,
 .btn-info:focus {
-    background-color: #1e1e1e;
-    border-color: #1e1e1e;
+    background-color: #121212;
+    color: white;
+    border-color: #121212;
+    margin-left: 373px;
+    border-radius: 0px 7px 7px 0px;
+    box-shadow: 4px 0 5px -2px #888;
+    
 }
 
 #content{
-	width: 100%;
-	padding: 20px;
+    margin-left: 410px;
+	padding: 20px 20px 20px 20px;
 	min-height: 100vh;
-	transition: all 0.3s;
+    transition: all 0.3s;
+}
+#content.expand {
+    margin-left: 35px;
 }
 
 
 @media (max-width: 768px) {
     #sidebar {
-        margin-left: -250px;
-
+        margin-left: -375px;
     }
     #sidebar.active {
         margin-left: 0;
         width: 100%;
     }
+    #content {
+        margin-left: 35px;
+    }
+    #content.expand {
+        margin-left: 410px;
+        width: 100%;
+    }
     #sidebarCollapse span {
         display: none;
     }
-    #main-content {
+}
+@media (max-height: 600px) {
+    #sidebar {
+        margin-left: -375px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+        width: 100%;
+    }
+    #content {
+        margin-left: 35px;
+    }
+    #content.expand {
+        margin-left: 410px;
+        width: 100%;
+    }
+    #sidebarCollapse span {
         display: none;
     }
 }

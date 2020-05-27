@@ -21,17 +21,22 @@
 <body>
     <div class="wrapper">
         <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Michael Casio</h3>
+            <div class="sidebar-button">
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <ul class="lisst-unstyled components">
+            <div class="sidebar-avatar"><img src="images/headshot2.jpg" alt="Avatar"></div>
+            <div class="sidebar-header">Michael Casio</div>
+            <div class="sidebar-title">Electrical/Computer Engineer</div>
+            <ul class="list-unstyled components">
                 <!-- About Me -->
                 <li><a href="#">About</a></li>
                 <!-- Experiences -->
                 <li>
                     <a href="#expSubmenu" data-toggle="collapse" aria-expanded="false"
                         class="dropdown-toggle">Experiences</a>
-                    <ul class="collapse lisst-unstyled" id="expSubmenu">
+                    <ul class="collapse list-unstyled" id="expSubmenu">
                         <li><a href="#">Engineering</a></li>
                         <li><a href="#">Non-Engineering</a></li>
                     </ul>
@@ -40,7 +45,7 @@
                 <li>
                     <a href="#projSubmenu" data-toggle="collapse" aria-expanded="false"
                         class="dropdown-toggle">Projects</a>
-                    <ul class="collapse lisst-unstyled" id="projSubmenu">
+                    <ul class="collapse list-unstyled" id="projSubmenu">
                         <li><a href="#">Hardware</a></li>
                         <li><a href="#">Software</a></li>
                     </ul>
@@ -48,98 +53,92 @@
                 <!-- Contact -->
                 <li><a href="#">Contact</a></li>
             </ul>
+            <div class="sidebar-icons">
+                <a href="mailto:casiomichael@gmail.com"><i class="far fa-envelope"></i></a>
+                <a style="padding-left:5px;" href="https://linkedin.com/in/michaelcasio"><i class="fab fa-linkedin-in"></i></a>
+                <a style="padding-left:5px;" href="https://github.com/casiomichael"><i class="fab fa-github"></i></a>
+            </div>
         </nav>
 
         <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-                </div>
-            </nav>
-
-            <br><br>
-            <div id="main-content">
-                <h2>TITLE OF CONTENT</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                    Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                    sapien
-                    eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                    ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                    accumsan
-                    tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                    ultricies
-                    mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                    libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                    diam
-                    quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                    ultricies mi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                    Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                    sapien
-                    eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                    ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                    accumsan
-                    tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                    ultricies
-                    mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                    libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                    diam
-                    quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                    ultricies mi.</p>
-                <div class="line"></div>
-                <h3>Subparagraph</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                    Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                    sapien
-                    eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                    ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                    accumsan
-                    tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                    ultricies
-                    mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                    libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                    diam
-                    quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                    ultricies mi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                    Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                    sapien
-                    eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                    ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                    accumsan
-                    tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                    ultricies
-                    mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                    libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                    diam
-                    quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                    ultricies mi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                    Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                    sapien
-                    eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                    ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                    accumsan
-                    tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                    ultricies
-                    mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                    libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                    diam
-                    quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                    ultricies mi.</p>
-            </div>
+            <h2>TITLE OF CONTENT</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
+                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
+                sapien
+                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
+                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
+                accumsan
+                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
+                ultricies
+                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
+                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
+                diam
+                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
+                ultricies mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
+                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
+                sapien
+                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
+                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
+                accumsan
+                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
+                ultricies
+                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
+                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
+                diam
+                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
+                ultricies mi.</p>
+            <div class="line"></div>
+            <h3>Subparagraph</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
+                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
+                sapien
+                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
+                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
+                accumsan
+                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
+                ultricies
+                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
+                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
+                diam
+                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
+                ultricies mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
+                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
+                sapien
+                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
+                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
+                accumsan
+                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
+                ultricies
+                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
+                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
+                diam
+                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
+                ultricies mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
+                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
+                sapien
+                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
+                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
+                accumsan
+                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
+                ultricies
+                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
+                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
+                diam
+                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
+                ultricies mi.</p>
 
         </div>
 
@@ -163,6 +162,7 @@
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('expand');
             });
         });
     </script>
