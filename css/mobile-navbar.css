@@ -1,0 +1,247 @@
+#navbar{
+    color: white;
+    width: 100%;
+    display: none;
+    transition: all 0.3s;
+    border-bottom: 0px solid rgb(35,35,35);
+    padding: 0px;
+}
+
+#navbar .navbar-elements{
+    transition: all 0.3s;
+    height: 200px;
+    overflow: hidden;
+}
+
+#navbar .navbar-elements.collapsed{
+    height: 0px;
+}
+
+#navbar ul{
+    width: 100%;
+    list-style: none;
+}
+
+#navbar .navbar-header{
+    padding: 30px 30px 5px 30px;
+    text-align: center;
+    letter-spacing: 4px; 
+    font-weight: 900;  
+    font-size: 1.45em;
+    text-transform: uppercase;
+}
+
+#navbar .navbar-button{
+    width: 100%;
+    display: inline-block;
+    margin-right: 10px;
+    border-bottom: 0px solid rgb(35,35,35);
+    
+}
+#navbar .navbar-button .btn{
+    float: right;
+    margin-right: 10px;
+}
+#navbar .navbar-button .btn-info,
+#navbar .navbar-button .btn-info:active,
+#navbar .navbar-button .btn-info:visited,
+#navbar .navbar-button .btn-info:focus {
+    background-color: rgba(18,18,18,0.9);
+    color: #aaaaaa;
+    border-color: rgba(18,18,18,0.9);
+}
+#navbar .navbar-button .btn-info:hover{
+    color: white;
+    border-color: rgba(18,18,18,0.9);
+    background-color: rgba(18,18,18,0.9);
+}
+
+#navbar .navbar-avatar img{
+    text-align: center;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#navbar .navbar-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px; 
+    font-weight: 400; 
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(35,35,35);
+}
+
+#navbar ul.components{
+    padding: 0px;
+}
+
+#navbar ul p{
+	color: #fff;
+	padding: 10px;
+}
+
+#navbar ul li a{
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 7px 0px 7px 20px;
+    font-weight: 300;
+    display: block;
+    width: 100%;
+    border-left: 4px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#navbar ul ul li{
+    border-bottom: none;
+    margin-left: -40px;
+}
+#navbar .navbar-button .navbar-socials a{
+    float: left;
+    padding: 7px 7px 7px 15px;
+    position: relative;
+    color: #aaaaaa;
+}
+#navbar .navbar-button a:hover{
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background: rgba(27,27,27,0.5);
+    border-left-color: cyan;
+}
+#navbar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #ffffff !important; 
+    background: rgba(22,22,22,0.5);
+}
+
+a[data-toggle="collapse"]{
+	position: relative;
+}
+
+#navbar ul ul a{
+    font-size: 0.9em !important;
+    padding-left: 85px !important;
+    background: rgba(22,22,22,0.5);
+}
+
+#navbar .navbar-nightmode .btn-info,
+#navbar .navbar-nightmode .btn-info:active,
+#navbar .navbar-nightmode .btn-info:visited,
+#navbar .navbar-nightmode .btn-info:focus {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    float: left;
+    padding: 20px;
+    background: rgba(18,18,18,0.1);
+    color: #aaaaaa;
+    border-color: rgba(18,18,18,0.1);
+    font-weight: 400;
+    text-align: right;
+
+}
+#navbar .navbar-nightmode .btn-info:hover{
+    color: white;
+}
+
+/* CURRENT PAGE SETTINGS */
+#navbar ul li a.currentPage{
+    color: white !important; 
+    border-left-color: cyan;
+    transition: all 0.3s;
+}
+#navbar ul li ul li a.currentSubpage{
+    color: white !important;
+}
+
+/* DAYMODE SETTINGS */
+#navbar.daymode{
+    background: rgba(241,241,241,0.7);
+    border-bottom: 0px solid rgb(200,200,200);
+    color: #3f3f3f;
+}
+
+#navbar.daymode .navbar-title{
+    border-bottom: 1px solid rgb(200,200,200);
+}
+#navbar.daymode .navbar-button{
+    border-bottom: 1px solid rgb(200,200,200);
+}
+#navbar.daymode ul li a{
+    font-weight: 400;
+    color: #5e5e5e;
+}
+#navbar.daymode ul li a:hover{
+    color: black;
+    background: rgba(251,251,251,0.3);
+    border-left-color: rgb(55,100,144);
+}
+#navbar.daymode .navbar-button{
+    color: #727272;
+}
+#navbar.daymode .navbar-button a:hover{
+    color: black;
+}
+#navbar.daymode .navbar-nightmode .btn-info,
+#navbar.daymode .navbar-nightmode .btn-info:active,
+#navbar.daymode .navbar-nightmode .btn-info:visited,
+#navbar.daymode .navbar-nightmode .btn-info:focus {
+    background-color: rgba(241,241,241,0.5);
+    border-color: rgba(241,241,241,0.5);
+    color: #7f7f7f;
+}
+#navbar.daymode .navbar-nightmode .btn-info:hover{
+    color: black;
+}
+#navbar.daymode .navbar-button .btn-info,
+#navbar.daymode .navbar-button .btn-info:active,
+#navbar.daymode .navbar-button .btn-info:visited,
+#navbar.daymode .navbar-button .btn-info:focus {
+    background-color: rgba(241,241,241,0.96);
+    border-color: rgba(241,241,241,0.96);
+    color: #7f7f7f;
+}
+#navbar.daymode .navbar-button .btn-info:hover{
+    color: black;
+}
+#navbar.daymode ul ul a{
+    background: rgba(233,233,233,0.3);
+}
+#navbar.daymode ul li.active>a,
+#navbar.daymode a[aria-expanded="true"] {
+    color: black !important;
+    background: rgba(233,233,233,0.3);
+}
+
+#navbar.daymode a[data-toggle="collapse"]{
+	position: relative;
+}
+
+/* CURRENT PAGE DAYMODE SETTINGS*/
+#navbar.daymode ul li a.currentPage{
+    color: black !important; 
+    border-left-color: rgb(55,100,144);
+    transition: all 0.3s; 
+}
+#navbar.daymode ul li ul li a.currentSubpage{
+    color: black !important;
+}
+
+
+/* WINDOW RESIZE SETTINGS */
+@media (max-width: 768px) {
+    #navbar {
+        background: rgba(18,18,18,0.9);
+        display: inline;
+    }
+}

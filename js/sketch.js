@@ -4,11 +4,11 @@ var bgColor = 'rgb(30,30,30)';
 var particleColor = 'rgba(255,255,255,0.25)';
 
 function setup() {
-    canvas = createCanvas(windowWidth, windowHeight);
+    canvas = createCanvas(document.body.clientWidth,document.body.clientHeight);
     canvas.position(0, 0);
     canvas.style('z-index', '-1');
 
-    const particlesLength = Math.min(Math.floor(window.innerWidth / 10), 150);
+    const particlesLength = Math.min(Math.floor(windowWidth / 10), 150);
     for (let i = 0; i < particlesLength; i++) {
         particles.push(new Particle());
     }
@@ -25,7 +25,7 @@ function draw() {
 
 class Particle {
     constructor() {
-        this.pos = createVector(random(displayWidth), random(displayHeight));
+        this.pos = createVector(random($(document).width()), random($(document).height()));
         this.vel = createVector(random(-1, 1), random(-1, 1));
         this.size = 5;
     }
@@ -63,7 +63,7 @@ class Particle {
     }
 }
 
-function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+function windowResized(){
+    resizeCanvas(document.body.clientWidth, document.body.clientHeight);
     canvas.position(0,0);
-  }
+}

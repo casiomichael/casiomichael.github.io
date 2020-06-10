@@ -1,0 +1,61 @@
+
+#content{
+    margin-left: 410px;
+	padding: 20px 20px 20px 20px;
+	min-height: 100vh;
+    transition: all 0.3s;
+    width: 100%;
+}
+#content.expand {
+    margin-left: 35px;
+}
+
+/**** CSS FOR WELCOME PAGE ******/
+#content .intro{
+    color: white;
+    position: relative;
+    top: 30%;
+}
+
+#content .intro-name{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#content .intro-description{
+    font-size: 1.65em;
+    font-weight: 300;
+}
+
+#content .intro-description strong{
+    font-weight: 500;
+}
+/* CSS for DAYMODE WELCOME PAGE */
+#content.daymode .intro{
+    color: rgb(66, 66, 66);
+}
+
+/**** CSS FOR ABOUT PAGE ******/
+#content .about{
+    background: rgb(30,30,30);
+}
+#content .about .about-header{
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* WINDOW RESIZE SETTINGS */
+@media (max-width: 768px) {
+    #content {
+        margin-left: 35px;
+    }
+    #content.expand {
+        margin-left: 410px;
+        width: 100%;
+    }
+}

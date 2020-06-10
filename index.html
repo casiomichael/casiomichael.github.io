@@ -15,10 +15,63 @@
     <!-- Other CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/mobile-navbar.css">
 </head>
 
 <body>
+    <div class="navbar-wrapper">
+        <nav id="navbar">
+            <div class="navbar-avatar"><img src="/images/headshot2.JPG" alt="navbar-Avatar"></div>
+            <div class="navbar-header"><a href="/index.html">Michael Casio</a></div>
+            <div class="navbar-title">Electrical/Computer Engineer</div>
+            <div class="navbar-button">
+                <div class="navbar-socials">
+                    <a href="mailto:casiomichael@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a style="padding-left:5px;" href="https://linkedin.com/in/michaelcasio" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a style="padding-left:5px;" href="https://github.com/casiomichael" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                </div>
+                <button type="button" id="navbarCollapse" class="btn btn-info">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="navbar-elements collapsed" id="navbar-elements">
+                <ul class="lisst-unstyled components">
+                    <!-- About Me -->
+                    <li><a href="/about.html">About</a></li>
+                    <!-- Experiences -->
+                    <li>
+                        <a href="#expSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                            id="exp-dropdown">Experiences</a>
+                        <ul class="collapse list-unstyled" id="expSubmenu">
+                            <li><a href="/exp-eng.html">Engineering</a></li>
+                            <li><a href="/exp-noneng.html">Non-Engineering</a></li>
+                        </ul>
+                    </li>
+                    <!-- Projects -->
+                    <li>
+                        <a href="#projSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                            id="proj-dropdown">Projects</a>
+                        <ul class="collapse list-unstyled" id="projSubmenu">
+                            <li><a href="/proj-hardware.html">Hardware</a></li>
+                            <li><a href="/proj-software.html">Software</a></li>
+                        </ul>
+                    </li>
+                    <!-- Contact -->
+                    <li><a href="/contact.html">Contact</a></li>
+                    <div class="navbar-nightmode">
+                        <button type="button" id="nav-nightmode-toggle" class="btn btn-info">
+                            <i class="fas fa-moon"></i> Dark mode
+                        </button>
+                    </div>
+
+            </div>
+        </nav>
+    </div>
     <div class="wrapper">
         <nav id="sidebar">
             <div class="sidebar-button">
@@ -70,9 +123,10 @@
         <div id="content">
             <div class="intro">
                 <div class="intro-name">Hi, I'm Michael,</div>
-                <div class="intro-description">an Electrical/Computer Engineer specialized in <strong>Hardware and MEP Engineering.</strong></div>
+                <div class="intro-description">an Electrical/Computer Engineer specialized in <strong>Hardware and MEP
+                        Engineering.</strong></div>
             </div>
-            <script src="sketch.js"></script>
+            <script src="/js/sketch.js"></script>
         </div>
 
 
@@ -93,61 +147,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
-    <script>
-        $(document).ready(function () {
-            // STORES COOKIES TO REMEMBER STATE ON PAGE REFRESH
-            var nightmode_class = Cookies.get('nightmode_class');
-            if (nightmode_class) {
-                $('#sidebar').attr('class', nightmode_class);
-            }
-
-            // CHANGES ICONS FOR DAYMODE
-            if ($('#sidebar').hasClass('daymode')) {
-                $('#nightmode-toggle').find("svg").attr('data-prefix', 'far');
-                bgColor = 'rgb(240,240,240)';
-                particleColor = 'rgba(0,0,0,0.2)';
-            }
-            else {
-                $('#nightmode-toggle').find("svg").attr('data-prefix', 'fas');
-                bgColor = 'rgb(30,30,30)';
-                particleColor = 'rgba(255,255,255,0.25)';
-            }
-            // ENSURES CLASSES ARE CORRECT FOR COLLAPSE
-            if ($('#sidebar').hasClass('active') == true && $('#content').hasClass('expand') == false) {
-                $('#content').addClass('expand');
-            }
-            else if ($('#sidebar').hasClass('active') == false && $('#content').hasClass('expand') == true) {
-                $('#sidebar').addClass('active');
-            }
-
-            // ENSURES CLASSES ARE CORRECT FOR DAYMODE/NIGHTMODE
-            if ($('#sidebar').hasClass('daymode') == true && $('content').hasClass('daymode') == false){
-                $('#content').addClass('daymode');
-            }
-
-
-            // TOGGLES CLASSES
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $('#content').toggleClass('expand');
-            });
-            $('#nightmode-toggle').on('click', function () {
-                $('#sidebar').toggleClass('daymode');
-                $('#content').toggleClass('daymode');
-                if ($('#sidebar').hasClass('daymode')) {
-                    $('#nightmode-toggle').find("svg").attr('data-prefix', 'far');
-                    bgColor = 'rgb(240,240,240)';
-                    particleColor = 'rgba(0,0,0,0.15)';
-                }
-                else {
-                    $('#nightmode-toggle').find("svg").attr('data-prefix', 'fas');
-                    bgColor = 'rgb(30,30,30)';
-                    particleColor = 'rgba(255,255,255,0.25)';
-                }
-                Cookies.set('nightmode_class', $('#sidebar').attr('class'));
-            });
-        });
-    </script>
+    <script src="/js/cookies-n-clicks.js"></script>
 </body>
 
 </html>

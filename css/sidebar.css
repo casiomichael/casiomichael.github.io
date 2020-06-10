@@ -1,31 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-html{
-    min-height: 100%;
-}
-body{
-    font-family: 'Roboto', sans-serif;
-    background: rgb(30,30,30);
-    margin: 0;
-    overflow: hidden;
-}
-
-
-a,
-a:hover,
-a:focus{
-	color: inherit;
-	text-decoration: none;
-}
-
 /* Side Bar*/
 #sidebar.active {
     margin-left: -375px;
-}
-.wrapper{
-	display: flex;
-	text-decoration: none;
-	transition: all 0.3s;
 }
 
 #sidebar{
@@ -127,18 +102,7 @@ a[data-toggle="collapse"]{
 	position: relative;
 }
 
-.dropdown-toggle::after{
-	display: block;
-    position: absolute;
-	top: 50%;
-	right: 10%;
-    transform: translateY(-50%);
-    transition: all 0.3s;
-}
-.dropdown-toggle[aria-expanded="true"]::after{
-    transform: translateY(-50%) rotate(-180deg);
-}
-ul ul a{
+#sidebar ul ul a{
     font-size: 0.9em !important;
     padding-left: 85px !important;
     background: rgba(22,22,22,0.5);
@@ -180,42 +144,6 @@ ul ul a{
 #sidebar .nightmode .btn-info:hover{
     color: white;
 }
-
-#content{
-    margin-left: 410px;
-	padding: 20px 20px 20px 20px;
-	min-height: 100vh;
-    transition: all 0.3s;
-}
-#content.expand {
-    margin-left: 35px;
-}
-
-/**** CSS FOR WELCOME PAGE ******/
-#content .intro{
-    color: white;
-    position: relative;
-    top: 35%;
-}
-
-#content .intro-name{
-    font-size: 3em;
-    font-weight: 700;
-}
-
-#content .intro-description{
-    font-size: 1.65em;
-    font-weight: 300;
-}
-
-#content .intro-description strong{
-    font-weight: 500;
-}
-/* CSS for DAYMODE WELCOME PAGE */
-#content.daymode .intro{
-    color: rgb(66, 66, 66);
-}
-
 
 /* CURRENT PAGE SETTINGS */
 #sidebar ul li a.currentPage{
@@ -295,21 +223,6 @@ ul ul a{
 /* WINDOW RESIZE SETTINGS */
 @media (max-width: 768px) {
     #sidebar {
-        margin-left: -375px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-        width: 100%;
-    }
-    #content {
-        margin-left: 35px;
-    }
-    #content.expand {
-        margin-left: 410px;
-        width: 100%;
-    }
-    #sidebarCollapse span {
         display: none;
     }
 }
-
