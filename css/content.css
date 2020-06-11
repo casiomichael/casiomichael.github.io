@@ -2,7 +2,7 @@
 #content{
     margin-left: 410px;
 	padding: 20px 20px 20px 20px;
-	min-height: 100vh;
+    min-height: 100vh;
     transition: all 0.3s;
     width: 100%;
 }
@@ -36,18 +36,48 @@
 }
 
 /**** CSS FOR ABOUT PAGE ******/
-#content .about{
-    background: rgb(30,30,30);
-}
-#content .about .about-header{
+#content .about-wrapper{
+    display: flex;
+    width: 100%;
     color: white;
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 2em;
-    font-weight: 700;
-    text-align: center;
 }
+#content .about{
+    display: inline-block;
+}
+#content .about .about-image{
+    height: 95vh;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+#content .about .about-image img{
+    min-width: 300px;
+    width: 35vw;
+    min-height: 600px;
+    max-width: 600px;
+    max-height: 100%;
+    display: block;
+    margin: 0 0 0 auto;
+    object-fit: contain;
+}
+#content .about-description{
+    display: block;
+    margin: auto 0 auto 20px;
+}
+#content .about-header{
+    font-size: 2.75em;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+#content .about-bio{
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding-top: 5px;
+}
+#content .about-bio a{
+    color: 	rgb(181, 211, 29);
+}
+
 
 /* WINDOW RESIZE SETTINGS */
 @media (max-width: 768px) {

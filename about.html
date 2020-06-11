@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>About | Michael Casio </title>
+    <title>About Me | Michael Casio </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Personal Website" />
     <meta name="keywords" content="portfolio, bootstrap, css, javascript, html, mep, resume, engineering, ece" />
@@ -15,10 +15,64 @@
     <!-- Other CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/mobile-navbar.css">
 </head>
 
-<body>
+<body id="body">
+    <div class="navbar-wrapper">
+        <nav id="navbar">
+            <div class="navbar-button">
+                <div class="navbar-socials">
+                    <a href="/index.html"><i class="fas fa-home"></i></a>
+                    <a style="padding-left:5px" href="mailto:casiomichael@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a style="padding-left:5px;" href="https://linkedin.com/in/michaelcasio" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a style="padding-left:5px;" href="https://github.com/casiomichael" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                </div>
+                <button type="button" id="navbarCollapse" class="btn btn-info">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="navbar-elements collapsed" id="navbar-elements">
+                <div class="navbar-avatar"><img src="/images/headshot2.JPG" alt="navbar-Avatar"></div>
+                <div class="navbar-header"><a href="/index.html">Michael Casio</a></div>
+                <div class="navbar-title">Electrical/Computer Engineer</div>
+                <ul class="lisst-unstyled components">
+                    <!-- About Me -->
+                    <li><a href="/about.html" class="currentPage">About</a></li>
+                    <!-- Experiences -->
+                    <li>
+                        <a href="#expSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                            id="exp-dropdown">Experiences</a>
+                        <ul class="collapse list-unstyled" id="expSubmenu">
+                            <li><a href="/exp-eng.html">Engineering</a></li>
+                            <li><a href="/exp-noneng.html">Non-Engineering</a></li>
+                        </ul>
+                    </li>
+                    <!-- Projects -->
+                    <li>
+                        <a href="#projSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                            id="proj-dropdown">Projects</a>
+                        <ul class="collapse list-unstyled" id="projSubmenu">
+                            <li><a href="/proj-hardware.html">Hardware</a></li>
+                            <li><a href="/proj-software.html">Software</a></li>
+                        </ul>
+                    </li>
+                    <!-- Contact -->
+                    <li><a href="/contact.html">Contact</a></li>
+                    <div class="navbar-nightmode">
+                        <button type="button" id="nav-nightmode-toggle" class="btn btn-info">
+                            <i class="fas fa-moon"></i> Dark mode
+                        </button>
+                    </div>
+
+            </div>
+        </nav>
+    </div>
     <div class="wrapper">
         <nav id="sidebar">
             <div class="sidebar-button">
@@ -34,8 +88,8 @@
                 <li><a href="/about.html" class="currentPage">About</a></li>
                 <!-- Experiences -->
                 <li>
-                    <a href="#expSubmenu" data-toggle="collapse" aria-expanded="false"
-                        class="dropdown-toggle" id="exp-dropdown">Experiences</a>
+                    <a href="#expSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                        id="exp-dropdown">Experiences</a>
                     <ul class="collapse list-unstyled" id="expSubmenu">
                         <li><a href="/exp-eng.html">Engineering</a></li>
                         <li><a href="/exp-noneng.html">Non-Engineering</a></li>
@@ -43,8 +97,8 @@
                 </li>
                 <!-- Projects -->
                 <li>
-                    <a href="#projSubmenu" data-toggle="collapse" aria-expanded="false"
-                        class="dropdown-toggle" id="proj-dropdown">Projects</a>
+                    <a href="#projSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                        id="proj-dropdown">Projects</a>
                     <ul class="collapse list-unstyled" id="projSubmenu">
                         <li><a href="/proj-hardware.html">Hardware</a></li>
                         <li><a href="/proj-software.html">Software</a></li>
@@ -57,7 +111,8 @@
                 <a href="mailto:casiomichael@gmail.com"><i class="far fa-envelope"></i></a>
                 <a style="padding-left:5px;" href="https://linkedin.com/in/michaelcasio" target="_blank"><i
                         class="fab fa-linkedin-in"></i></a>
-                <a style="padding-left:5px;" href="https://github.com/casiomichael" target="_blank"><i class="fab fa-github"></i></a>
+                <a style="padding-left:5px;" href="https://github.com/casiomichael" target="_blank"><i
+                        class="fab fa-github"></i></a>
             </div>
             <div class="nightmode">
                 <button type="button" id="nightmode-toggle" class="btn btn-info">
@@ -67,8 +122,32 @@
         </nav>
 
         <div id="content">
-            <div class="about">
-                <div class="about-header">About</div>
+            <div class="about-wrapper">
+                <div class="about"><div class="about-image"><img src="/images/wedding-book.JPG" alt="about-image"></div>
+                </div>
+                <div class="about-description">
+                    <div class="about-header">Hello!</div>
+                    <div class="about-bio">
+                        My name is Michael Kenneth Casio — a recent graduate from Duke University (Pratt '20) with a BSE in Electrical/Computer Engineering and a minor in 
+                        Environmental Science/Policy. I have a passion for analog/digital electronics. working towards designing sustainability in the built environment,
+                        and improving workflows in the construction design industry. Starting September 2020, I will be a Graduate Electrical Engineer in 
+                        <a href="https://www.burohappold.com/" target="_blank">Buro Happold Engineering's</a> NYC office. However, in the meantime, I am back home in Houston, TX.
+                        <br><br>
+                        During the summer of 2017, as a part of Duke's <a href="https://www.ewh.org/" target="_blank">Engineering World Health (EWH)</a> Chapter, I spent a week with five other 
+                        Duke Engineer undergrads in Guatemala, fixing broken medical equipment like cauterizers and incubators. When I started my college career, I intended to 
+                        study Biomedical Engineering, and go towards a research-focused career path. However, through this experience with EWH, my interest in hardware 
+                        electronics and tinkering began. During the summer of 2019, I interned for Buro Happold, working on projects in residential, mixed-use, and 
+                        educational buildings. Through this experience, I became really interested in Built Environment, specifically how to make it more sustainable and how 
+                        to improve the industry's technologies to <a href="#" target="_blank">improve workflow</a>.
+                        <br><br>
+                        In my spare time, I enjoy playing video games, specifically NBA 2K and Call of Duty. I also enjoy trying new foods and cooking! The picture shown is me
+                        with <a href="https://www.google.com/books/edition/The_Seven_Culinary_Wonders_of_the_World/5AZxDwAAQBAJ?hl=en&gbpv=0" target="_blank">a book</a> I received 
+                        from my sister at her wedding, which has countless of recipes from all over the world. I try to document my food adventures on 
+                        <a href="https://www.instagram.com/michaelsmirepoix/" target="_blank">my food Instagram</a> when I can. I also enjoy making different 
+                        <a href="https://open.spotify.com/user/1226183400?si=QInxity5TzqcOBDaVvXuiA" target="_blank">playlists</a> of my wide-ranging music tastes. 
+
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -89,47 +168,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // STORES COOKIES TO REMEMBER STATE ON PAGE REFRESH
-            var nightmode_class = Cookies.get('nightmode_class');
-            if (nightmode_class) {
-                $('#sidebar').attr('class', nightmode_class);
-            }
-
-            // CHANGES ICONS FOR DAYMODE
-            if ($('#sidebar').hasClass('daymode')) {
-                $('#nightmode-toggle').find("svg").attr('data-prefix', 'far');
-            }
-            else {
-                $('#nightmode-toggle').find("svg").attr('data-prefix', 'fas');
-            }
-
-            // ENSURES CLASSES ARE CORRECT FOR COLLAPSE
-            if ($('#sidebar').hasClass('active') == true && $('#content').hasClass('expand') == false){
-                $('#content').addClass('expand');
-            }
-            else if ($('#sidebar').hasClass('active') == false && $('#content').hasClass('expand') == true){
-                $('#sidebar').addClass('active');
-            }
-
-            // TOGGLES CLASSES
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $('#content').toggleClass('expand');
-            });
-            $('#nightmode-toggle').on('click', function () {
-                $('#sidebar').toggleClass('daymode');
-                if ($('#sidebar').hasClass('daymode')) {
-                    $('#nightmode-toggle').find("svg").attr('data-prefix', 'far');
-                }
-                else {
-                    $('#nightmode-toggle').find("svg").attr('data-prefix', 'fas');
-                }
-                Cookies.set('nightmode_class', $('#sidebar').attr('class'));
-            });
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="/js/cookies-n-clicks.js"></script>
 </body>
 
 </html>

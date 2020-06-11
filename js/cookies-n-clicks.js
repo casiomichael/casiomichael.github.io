@@ -10,6 +10,7 @@ $(document).ready(function () {
     if ($('#sidebar').hasClass('daymode') && $('#navbar').hasClass('daymode')) {
         $('#nightmode-toggle').find("svg").attr('data-prefix', 'far');
         $('#nav-nightmode-toggle').find("svg").attr('data-prefix', 'far');
+        $('#body').attr('class', 'daymode');
         bgColor = 'rgb(240,240,240)';
         particleColor = 'rgba(0,0,0,0.2)';
     }
@@ -44,6 +45,7 @@ $(document).ready(function () {
     });
     $('#nightmode-toggle').on('click', function () {
         $('#sidebar').toggleClass('daymode');
+        $('#body').toggleClass('daymode');
         $('#navbar').toggleClass('daymode');
         $('#content').toggleClass('daymode');
         if ($('#sidebar').hasClass('daymode')) {
@@ -62,6 +64,7 @@ $(document).ready(function () {
     });
     $('#nav-nightmode-toggle').on('click', function () {
         $('#sidebar').toggleClass('daymode');
+        $('#body').toggleClass('daymode');
         $('#navbar').toggleClass('daymode');
         $('#content').toggleClass('daymode');
         if ($('#sidebar').hasClass('daymode')) {

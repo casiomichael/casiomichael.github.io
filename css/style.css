@@ -8,6 +8,9 @@ body{
     background: rgb(30,30,30);
 }
 
+body.daymode{
+    background: rgb(241,241,241);
+}
 
 a,
 a:hover,
