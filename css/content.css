@@ -52,7 +52,7 @@
 /* WINDOW RESIZE SETTINGS */
 @media (max-width: 768px) {
     #content {
-        margin-left: 35px;
+        margin-left: 10px;
     }
     #content.expand {
         margin-left: 410px;

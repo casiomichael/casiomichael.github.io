@@ -8,13 +8,15 @@
 }
 
 #navbar .navbar-elements{
-    transition: all 0.3s;
-    height: 200px;
+    transition: height 0.3s;
+    border-bottom: 1px solid rgb(35,35,35);
+    height: 485px;
     overflow: hidden;
 }
 
 #navbar .navbar-elements.collapsed{
     height: 0px;
+    border-bottom: 0px solid rgb(35,35,35);
 }
 
 #navbar ul{
@@ -41,6 +43,7 @@
 #navbar .navbar-button .btn{
     float: right;
     margin-right: 10px;
+    margin-top: 2px;
 }
 #navbar .navbar-button .btn-info,
 #navbar .navbar-button .btn-info:active,
@@ -61,7 +64,7 @@
     width: 150px;
     height: auto;
     border-radius: 50%;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -74,7 +77,6 @@
     letter-spacing: 1px; 
     font-weight: 400; 
     padding-bottom: 20px;
-    border-bottom: 1px solid rgb(35,35,35);
 }
 
 #navbar ul.components{
@@ -105,7 +107,7 @@
 }
 #navbar .navbar-button .navbar-socials a{
     float: left;
-    padding: 7px 7px 7px 15px;
+    padding: 10px 7px 7px 15px;
     position: relative;
     color: #aaaaaa;
 }
@@ -171,9 +173,6 @@ a[data-toggle="collapse"]{
     color: #3f3f3f;
 }
 
-#navbar.daymode .navbar-title{
-    border-bottom: 1px solid rgb(200,200,200);
-}
 #navbar.daymode .navbar-button{
     border-bottom: 1px solid rgb(200,200,200);
 }
@@ -185,6 +184,12 @@ a[data-toggle="collapse"]{
     color: black;
     background: rgba(251,251,251,0.3);
     border-left-color: rgb(55,100,144);
+}
+#navbar.daymode .navbar-elements{
+    border-bottom: 1px solid rgb(200,200,200);
+}
+#navbar.daymode .navbar-elements.collapsed{
+    border-bottom: 0px solid rgb(35,35,35);
 }
 #navbar.daymode .navbar-button{
     color: #727272;

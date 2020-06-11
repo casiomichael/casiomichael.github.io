@@ -67,3 +67,23 @@ function windowResized(){
     resizeCanvas(document.body.clientWidth, document.body.clientHeight);
     canvas.position(0,0);
 }
+
+function mouseClicked() {
+    resizeCanvas(document.body.clientWidth, document.body.clientHeight, true);
+    canvas.position(0,0);
+}
+
+function mouseWheel() {
+    resizeCanvas(document.body.clientWidth, document.body.clientHeight, true);
+    canvas.position(0,0);
+}
+
+function mouseReleased() {
+    resizeCanvas(document.body.clientWidth, document.body.clientHeight, true);
+    canvas.position(0,0);
+}
+
+function mouseMoved() {
+    resizeCanvas(document.body.clientWidth, document.body.clientHeight, true);
+    canvas.position(0,0);
+}
