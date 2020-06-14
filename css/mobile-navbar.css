@@ -8,14 +8,15 @@
 }
 
 #navbar .navbar-elements{
-    transition: height 0.3s;
+    transition: max-height 0.4s ease-in;
     border-bottom: 1px solid rgb(35,35,35);
-    height: 485px;
+    max-height: 650px;
     overflow: hidden;
 }
 
 #navbar .navbar-elements.collapsed{
-    height: 0px;
+    transition: max-height 0.4s ease-out;
+    max-height: 0px;
     border-bottom: 0px solid rgb(35,35,35);
 }
 

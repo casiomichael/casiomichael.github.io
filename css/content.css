@@ -41,6 +41,10 @@
     width: 100%;
     color: white;
 }
+#content.daymode .about-wrapper{
+    transition: all 0.3s;
+    color: #3f3f3f;
+}
 #content .about{
     display: inline-block;
 }
@@ -74,18 +78,47 @@
     font-weight: 300;
     padding-top: 5px;
 }
+#content.daymode .about-bio{
+    font-weight: 400;
+}
 #content .about-bio a{
     color: 	rgb(181, 211, 29);
+}
+#content.daymode .about-bio a{
+    color: rgb(48, 59, 223);
 }
 
 
 /* WINDOW RESIZE SETTINGS */
 @media (max-width: 768px) {
     #content {
-        margin-left: 10px;
+        margin-left: 0px;
     }
     #content.expand {
         margin-left: 410px;
         width: 100%;
+    }
+    #content .about-wrapper{
+        display: inline-block;
+    }
+    #content .about{
+        display: block;
+        height: auto;
+    }
+    #content .about-image{
+        height: auto !important;
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #content .about .about-image img{
+        width: 90vw;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #content .about-description{
+        padding-top: 10px;
+        margin: 0;
     }
 }

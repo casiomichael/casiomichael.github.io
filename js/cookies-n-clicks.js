@@ -21,19 +21,10 @@ $(document).ready(function () {
         particleColor = 'rgba(255,255,255,0.25)';
     }
 
-    // ENSURES CLASSES ARE CORRECT FOR COLLAPSE
-    if ($('#sidebar').hasClass('active') == true && $('#content').hasClass('expand') == false) {
-        $('#content').addClass('expand');
-    }
-    else if ($('#sidebar').hasClass('active') == false && $('#content').hasClass('expand') == true) {
-        $('#sidebar').addClass('active');
-    }
-
     // ENSURES CLASSES ARE CORRECT FOR DAYMODE/NIGHTMODE
     if (($('#sidebar').hasClass('daymode') == true && $('#navbar').hasClass('daymode') == true) && $('content').hasClass('daymode') == false) {
         $('#content').addClass('daymode');
     }
-
 
     // TOGGLES CLASSES
     $('#sidebarCollapse').on('click', function () {
