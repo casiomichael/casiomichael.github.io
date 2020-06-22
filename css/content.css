@@ -30,7 +30,6 @@
 #content .intro-description strong{
     font-weight: 500;
 }
-/* CSS for DAYMODE WELCOME PAGE */
 #content.daymode .intro{
     color: rgb(66, 66, 66);
 }
@@ -88,6 +87,123 @@
     color: rgb(48, 59, 223);
 }
 
+/**** CSS FOR PORTFOLIO PAGES ******/
+#content .portfolio{
+    color: white;
+}
+#content .timeline-title{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+#content .timeline-title-description{
+    font-size: 1em;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+#content .timeline{
+    display: block;
+    margin-left: 140px;
+}
+
+#content .timeline ul{
+    list-style-type: none;
+}
+#content .tl-element{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #707070;
+    margin-right: 20px;
+    display: flex;
+}
+#content .tl-element::after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #707070;
+    position: absolute;
+    left: -35px;
+    top: 4px;
+}
+#content .element-date{
+    display: table-cell;
+    position: absolute;
+    font-style: italic;
+    left: -180px;
+    font-weight: 300;
+}
+#content .element-date::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: cyan;
+    position: absolute;
+    left: 143px;
+    top: 8px;
+    z-index: 99;
+}
+#content .element-title{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+#content .element-subtitle{
+    font-weight: 400;
+    padding-bottom: 15px;
+    font-size: 1.1em;
+}
+#content .element-description{
+    font-weight: 300;
+}
+#content .element-description a{
+    color: rgb(181, 211, 29);
+}
+#content .element-technologies{
+    padding-top: 10px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+#content .technologies-title{
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+#content .element-technologies table{
+    display: block;
+}
+#content .element-technologies table td{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+#content .element-technologies table td a{
+    color: rgba(233,233,233,0.85);
+    font-size: 0.9em;
+    padding: 4px 10px;
+    background: rgba(18,18,18,0.4);
+    text-align: center;
+    margin-right: 10px;
+    font-weight: 500;
+}
+#content .element-technologies table td a:hover{
+    color: white;
+}
+#content .element-img{
+    display: inline-block;
+    height: inherit;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+#content .element-img img{
+    padding-left: 30px;
+    min-width: 300px;
+    width: 25vw;
+    max-width: 600px;
+    max-height: 100%;
+    padding-bottom: 10px;
+}
 
 /* WINDOW RESIZE SETTINGS */
 @media (max-width: 768px) {
@@ -120,5 +236,22 @@
     #content .about-description{
         padding-top: 10px;
         margin: 0;
+    }
+    #content .timeline-title{
+        margin-top: 0px;
+    }
+    #content .tl-element{
+        display: inline-block;
+    }
+    #content .element-img{
+        padding-top: 40px;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    #content .element-img img{
+        padding-left: 0px;
+        width: 100%;
     }
 }

@@ -1,18 +1,16 @@
 function checkCorrectStates() {
-    var w = document.documentElement.clientWidth;
-    var h = document.documentElement.clientHeight;
+    var w = window.innerWidth;
+    var h = window.innerHeight;
 
-    if (w < 768 && $('#content').hasClass('expand') == true) {
-        $('#content').removeClass('expand');
-        $('#sidebar').removeClass('active');
-    }
 
-    // ENSURES CLASSES ARE CORRECT FOR COLLAPSE
-    if ($('#sidebar').hasClass('active') == true && $('#content').hasClass('expand') == false) {
+    if (w >= 768 && w < 1300) {
         $('#content').addClass('expand');
-    }
-    else if ($('#sidebar').hasClass('active') == false && $('#content').hasClass('expand') == true) {
         $('#sidebar').addClass('active');
+        console.log('here');
+    }
+    else if (w < 768){
+        $('#content').removeClass();
+        $('#sidebar').removeClass('active');
     }
 }
 

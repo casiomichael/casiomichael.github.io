@@ -26,6 +26,20 @@ $(document).ready(function () {
         $('#content').addClass('daymode');
     }
 
+    // KEEPS SUBMENU EXPANDED IF CURRENT PAGE
+    if ($('#nav-exp-dropdown').hasClass('currentPage') || $('#sidebar-exp-dropdown').hasClass('currentPage')) {
+        $('#nav-exp-dropdown').attr('aria-expanded', 'true');
+        $('#sidebar-exp-dropdown').attr('aria-expanded', 'true');
+        $('#nav-expSubmenu').addClass('show');
+        $('#sidebar-expSubmenu').addClass('show');
+    }
+    if ($('#nav-proj-dropdown').hasClass('currentPage') || $('#sidebar-proj-dropdown').hasClass('currentPage')) {
+        $('#nav-proj-dropdown').attr('aria-expanded', 'true');
+        $('#sidebar-proj-dropdown').attr('aria-expanded', 'true');
+        $('#nav-projSubmenu').addClass('show');
+        $('#sidebar-projSubmenu').addClass('show');
+    }
+
     // TOGGLES CLASSES
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
