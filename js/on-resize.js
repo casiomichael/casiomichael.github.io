@@ -3,12 +3,12 @@ function checkCorrectStates() {
     var h = window.innerHeight;
 
 
-    if (w >= 768 && w < 1300) {
+    if (w >= 950 && w < 1300) {
         $('#content').addClass('expand');
         $('#sidebar').addClass('active');
         console.log('here');
     }
-    else if (w < 768){
+    else if (w < 950){
         $('#content').removeClass();
         $('#sidebar').removeClass('active');
     }

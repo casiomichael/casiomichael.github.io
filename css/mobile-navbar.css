@@ -245,7 +245,7 @@ a[data-toggle="collapse"]{
 
 
 /* WINDOW RESIZE SETTINGS */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     #navbar {
         background: rgba(18,18,18,0.9);
         display: inline;
