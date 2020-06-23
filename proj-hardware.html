@@ -15,10 +15,64 @@
     <!-- Other CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/mobile-navbar.css">
 </head>
 
 <body>
+    <div class="navbar-wrapper">
+        <nav id="navbar">
+            <div class="navbar-button">
+                <div class="navbar-socials">
+                    <a href="/index.html"><i class="fas fa-home"></i></a>
+                    <a style="padding-left:5px" href="mailto:casiomichael@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a style="padding-left:5px;" href="https://linkedin.com/in/michaelcasio" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a style="padding-left:5px;" href="https://github.com/casiomichael" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                </div>
+                <button type="button" id="navbarCollapse" class="btn btn-info">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="navbar-elements collapsed" id="navbar-elements">
+                <div class="navbar-avatar"><img src="/images/headshot2.JPG" alt="navbar-Avatar"></div>
+                <div class="navbar-header"><a href="/index.html">Michael Casio</a></div>
+                <div class="navbar-title">Electrical/Computer Engineer</div>
+                <ul class="lisst-unstyled components">
+                    <!-- About Me -->
+                    <li><a href="/about.html">About</a></li>
+                    <!-- Experiences -->
+                    <li>
+                        <a href="#nav-expSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle" id="nav-exp-dropdown">Experiences</a>
+                        <ul class="collapse list-unstyled" id="nav-expSubmenu">
+                            <li><a href="/exp-eng.html">Engineering</a></li>
+                            <li><a href="/exp-noneng.html">Non-Engineering</a></li>
+                        </ul>
+                    </li>
+                    <!-- Projects -->
+                    <li>
+                        <a href="#nav-projSubmenu" data-toggle="collapse" aria-expanded="false" 
+                            class="dropdown-toggle currentPage" id="nav-proj-dropdown">Projects</a>
+                        <ul class="collapse list-unstyled" id="nav-projSubmenu">
+                            <li><a href="/proj-hardware.html" class="currentSubpage">Hardware</a></li>
+                            <li><a href="/proj-software.html">Software</a></li>
+                        </ul>
+                    </li>
+                    <!-- Contact -->
+                    <li><a href="/contact.html">Contact</a></li>
+                    <div class="navbar-nightmode">
+                        <button type="button" id="nav-nightmode-toggle" class="btn btn-info">
+                            <i class="fas fa-moon"></i> Dark mode
+                        </button>
+                    </div>
+
+            </div>
+        </nav>
+    </div>
     <div class="wrapper">
         <nav id="sidebar">
             <div class="sidebar-button">
@@ -34,18 +88,18 @@
                 <li><a href="/about.html">About</a></li>
                 <!-- Experiences -->
                 <li>
-                    <a href="#expSubmenu" data-toggle="collapse" aria-expanded="false"
-                        class="dropdown-toggle" id="exp-dropdown">Experiences</a>
-                    <ul class="collapse list-unstyled" id="expSubmenu">
+                    <a href="#sidebar-expSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle" id="sidebar-exp-dropdown">Experiences</a>
+                    <ul class="collapse list-unstyled" id="sidebar-expSubmenu">
                         <li><a href="/exp-eng.html">Engineering</a></li>
                         <li><a href="/exp-noneng.html">Non-Engineering</a></li>
                     </ul>
                 </li>
                 <!-- Projects -->
                 <li>
-                    <a href="#projSubmenu" data-toggle="collapse" aria-expanded="false"
-                        class="dropdown-toggle currentPage" id="proj-dropdown">Projects</a>
-                    <ul class="collapse list-unstyled" id="projSubmenu">
+                    <a href="#sidebar-projSubmenu" data-toggle="collapse" aria-expanded="false" 
+                        class="dropdown-toggle currentPage" id="side-proj-dropdown">Projects</a>
+                    <ul class="collapse list-unstyled" id="sidebar-projSubmenu">
                         <li><a href="/proj-hardware.html" class="currentSubpage">Hardware</a></li>
                         <li><a href="/proj-software.html">Software</a></li>
                     </ul>
@@ -68,85 +122,199 @@
         </nav>
 
         <div id="content">
-            <h2>Hardware Projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                sapien
-                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                accumsan
-                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                ultricies
-                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                diam
-                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                ultricies mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                sapien
-                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                accumsan
-                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                ultricies
-                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                diam
-                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                ultricies mi.</p>
-            <div class="line"></div>
-            <h3>Subparagraph</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                sapien
-                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                accumsan
-                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                ultricies
-                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                diam
-                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                ultricies mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                sapien
-                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                accumsan
-                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                ultricies
-                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                diam
-                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                ultricies mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                sapien
-                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                accumsan
-                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                ultricies
-                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                diam
-                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                ultricies mi.</p>
-
+            <div class="portfolio">
+                <div class="timeline-title"> Engineering Experiences </div>
+                <div class="timeline-title-description">See different engineering experiences I've had, and the various
+                    skills I've learned below.</div>
+                <div class="timeline">
+                    <ul>
+                        <li class="tl-element" id="bh-intern">
+                            <div class="element-date">06/2019 - 08/2019</div>
+                            <div class="element-title">Buro Happold Engineering</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Electrical Engineering Intern</div>
+                                    <div class="element-description">During my three months interning for <a href="https://www.burohappold.com/" target="_blank">
+                                    Buro Happold</a>, I worked on
+                                        projects in various market sectors
+                                        such as education, mixed-use, and residential. I did both drawing reviews and
+                                        electrical design, including load calculations and power distribution system circuiting. In the two primary projects I worked on,
+                                        an educational lab building and a mixed-use building, I expeerienced working through the Construction Document (CD) phase of the build
+                                        process. Through these experiences, I learned how to manage time constraints while working with the other trades (Mechanical,
+                                        Plumbing, Fire Engineering). Furthermore, I learned different NEC, NFPA, and local building codes.
+                                        <br><br>
+                                        At Duke, my degree's coursework primarily focused on computer engineering and
+                                        digital systems, exposing me to a fair amount of programming. As an intern at BH, I added these programming skills to the team,
+                                        utilizing Python and learning Dynamo to create a script that can detect and pinpoint clashes in ductwork,
+                                        conduits, and piping within a Revit model. See the <a href="/proj-software.html#coordination">Software Projects</a> page for more details.
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Technologies</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="https://www.autodesk.com/products/revit/overview" target="_blank">Revit</a></td>
+                                                <td><a href="https://www.autodesk.com/products/autocad/overview" target="_blank">AutoCad</a></td>
+                                                <td><a href="https://www.python.org/" target="_blank">Python</a></td>
+                                                <td><a href="https://dynamobim.org/" target="_blank">Dynamo</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="element-img">
+                                    <img src="/images/bh-intern.JPG" alt="bh-intern">
+                                    <img src="/images/bh-sitevisit.JPG" alt="bh-sitevisit">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tl-element" id="counter-lab">
+                            <div class="element-date">10/2016 - 05/2018</div>
+                            <div class="element-title">Duke University Department of Pharmacology and Cancer Biology</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Research Lab Assistant at the Counter Lab</div>
+                                    <div class="element-description">When I first started my college career at Duke, I wanted to study Biomedical Engineering and pursue 
+                                        a career track in research. I worked under a PhD candidate in
+                                        <a href="https://medschool.duke.edu/about-us/our-faculty/christopher-m-counter" target="_blank">Dr. Christopher Counter's lab,</a> primarily doing DNA sequencing via PCR, scanning mice 
+                                        thyroid tissue for tumors and other irregularities, and overall learning lab etiquette and procedure. 
+                                        <br><br>
+                                        Our research primarily focused on analyzing
+                                        the effect of copper chelation on papillary thyroid cancers with an oncogenic BRAF mutation, which is present in 60% of all cases. This led to a 
+                                        <a href="https://clincancerres.aacrjournals.org/content/24/17/4271.article-info" target="_blank">paper</a> later published in 
+                                        <a href="https://clincancerres.aacrjournals.org/" target="_blank">Clinical Cancer Research</a> at the American Association for Cancer Research.
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Technologies</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="https://www.ncbi.nlm.nih.gov/probe/docs/techpcr/" target="_blank">PCR</a</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tl-element" id="ewh">
+                            <div class="element-date">09/2016 - 05/2020</div>
+                            <div class="element-title">Engineering World Health (EWH)</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Extracurricular Organization at Duke University</div>
+                                    <div class="element-description">
+                                        During the school year, as members of <a href="https://www.ewh.org/" target="_blank">Engineering World Health,</a> students work in design groups to design and build low-cost technology that can improve
+                                        healthcare delivery in low-income countries. At the end of each school year, EWH holds a nationwide contest for these designs.
+                                        During my four years at Duke, I worked on two projects: an <a href="#infant-audiometer">infant audiometer</a> during my first year, 
+                                        and a <a href="#patient-monitor">patient monitor</a> during my junior and senior years. 
+                                        See the <a href="/proj-hardware.html">Hardware Projects</a> page for more details.
+                                        <br><br>
+                                        During my sophomore year, rather than directly working on a project, I was part of a team that would solder together components onto 
+                                        electrocardiogram (ECG) circuit boards manufactured by EWH. These ECG kits would later be donated and sent to hospitals in developing countries.
+                                        <br><br>
+                                        Every year, a group of students from the chapter are selected to go to Guatemala for one week in the summer. During this week, we work with a 
+                                        biomedical engineering technician to diagnose and repair broken medical equipment in 
+                                        <a href="https://hospitaloccidente.mspas.gob.gt/" target="_blank">one of the largest regional hospitals</a> in the country. In total,
+                                        we were able to fix more than a dozen medical equipment, such as incubators, electrocauterizers, and anesthesia machines. 
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Technologies and Skills</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="https://www.autodesk.com/products/fusion-360/overview" target="_blank">Fusion 360</a></td>
+                                                <td><a href="https://www.autodesk.com/products/eagle/overview" target="_blank">EagleCAD</a></td>
+                                                <td><a href="#ewh">Soldering</a></td>
+                                                <td><a href="#ewh">Analog Circuits</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="element-img">
+                                    <img src="/images/ewh-guatemala.JPG" alt="ewh-guatemala">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tl-element" id="li-lab">
+                            <div class="element-date">06/2015 - 07/2015</div>
+                            <div class="element-title">Rice University Department of Civil and Environmental Engineering</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Research Lab Intern at the Li Lab</div>
+                                    <div class="element-description">As part of the Rice University Office of STEM Engagement's Research Experience for High School Students (REHSS)
+                                        program, I spent the summer after my junior year of high school interning for <a href="http://qilinli.rice.edu/" target="_blank">Dr. Qilin Li's</a> 
+                                        research lab. This was my first experience
+                                        being exposed to research, and ultimately influenced me to initially pursue biomedical engineering when I got to Duke. 
+                                        <br><br>
+                                        Our research primarily focused on the effect of d-tyrosine on biofilm formation. These biofilm growth and accumulation particularly pose 
+                                        problems in reverse osmosis and nanofiltration technologies, which are important for water treatment plants. During this summer, I cultured 
+                                        bacterial colonies and conducted experiments to determine ideal d-tyrosine concentrations to reduce biofilm formation. At the end of the program,
+                                        each intern wrote <a href="https://drive.google.com/file/d/1LQ4y92VgNBkuLQfvHnDQqFPXDvcmcwCZ/view?usp=sharing" target="_blank">papers</a> 
+                                        on their research for the summer.
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Technologies</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="#li-lab">Spectrophotometers</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="element-img">
+                                    <img src="/images/rehss.jpg" alt="rehss">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tl-element" id="ace">
+                            <div class="element-date">09/2014 - 05/2015</div>
+                            <div class="element-title">Walter P. Moore</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Engineering Apprentice</div>
+                                    <div class="element-description">As part of Walter P. Moore's Architecture, Construction, and Engineering 
+                                        <a href="https://www.acementor.org/index.php/affiliates/texas/houston/about-us/" target="_blank"> (ACE) Mentorship Program,</a>
+                                         I had the opportunity to work with engineers from their diagnostics group along with other students across the Houston area. 
+                                        <br><br>
+                                        During the school year, our task was to locate and provide a rough design/vision for the site of a city center project in Houston, TX. 
+                                        We worked under professional engineers and used Google Sketchup and Houston's GIMS database to model and perform feasibility analyses 
+                                        on our designs. More information about the city center can be found in the <a href="/proj-software.html#city-center">Software Projects</a> page.
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Technologies</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="https://www.sketchup.com/" target="_blank">Google Sketchup</a></td>
+                                                <td><a href="http://www.gims.houstontx.gov/PortalWS/MainPortal.aspx" target="_blank">Houston GIMS</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tl-element" id="dream">
+                            <div class="element-date">08/2013 - 05/2016</div>
+                            <div class="element-title">Rice DREAM</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Extracurricular Organization at Rice University</div>
+                                    <div class="element-description">Rice University's <a href="https://dream.rice.edu/" target="_blank">DREAM Mentorship Program</a>
+                                        seeks to engage high school students in the Houston area in STEM fields through weekly design projects using low-cost materials.
+                                        <br><br>
+                                        As a member of this organization, we designed projects such as a parachute that can protect an egg from a three-story drop,
+                                        a bridge that can sustain the weight of multiple textbooks, and a wind turbine made from office supplies. Through these projects,
+                                        we were able to apply fundamental engineering concepts from a classroom setting to a real-world scenario.
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Skills</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="#dream" target="_blank">Engineering design</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
 
@@ -166,57 +334,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // STORES COOKIES TO REMEMBER STATE ON PAGE REFRESH
-            var nightmode_class = Cookies.get('nightmode_class');
-            if (nightmode_class) {
-                $('#sidebar').attr('class', nightmode_class);
-            }
-
-            // CHANGES ICONS FOR DAYMODE
-            if ($('#sidebar').hasClass('daymode')) {
-                $('#nightmode-toggle').find("svg").attr('data-prefix', 'far');
-            }
-            else {
-                $('#nightmode-toggle').find("svg").attr('data-prefix', 'fas');
-            }
-
-            // ENSURES CLASSES ARE CORRECT FOR COLLAPSE
-            if ($('#sidebar').hasClass('active') == true && $('#content').hasClass('expand') == false) {
-                $('#content').addClass('expand');
-            }
-            else if ($('#sidebar').hasClass('active') == false && $('#content').hasClass('expand') == true) {
-                $('#sidebar').addClass('active');
-            }
-
-            // KEEPS SUBMENU EXPANDED IF CURRENT PAGE
-            if ($('#exp-dropdown').hasClass('currentPage')) {
-                $('#exp-dropdown').attr('aria-expanded', 'true');
-                $('#expSubmenu').addClass('show');
-            }
-            if ($('#proj-dropdown').hasClass('currentPage')) {
-                $('#proj-dropdown').attr('aria-expanded', 'true');
-                $('#projSubmenu').addClass('show');
-            }
-
-            // TOGGLES CLASSES
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $('#content').toggleClass('expand');
-            });
-            $('#nightmode-toggle').on('click', function () {
-                $('#sidebar').toggleClass('daymode');
-                if ($('#sidebar').hasClass('daymode')) {
-                    $('#nightmode-toggle').find("svg").attr('data-prefix', 'far');
-                }
-                else {
-                    $('#nightmode-toggle').find("svg").attr('data-prefix', 'fas');
-                }
-                Cookies.set('nightmode_class', $('#sidebar').attr('class'));
-            });
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="/js/cookies-n-clicks.js"></script>
+    <script src="/js/on-resize.js"></script>
 </body>
 
 </html>

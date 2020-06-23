@@ -96,7 +96,7 @@
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 #content .timeline-title-description{
     font-size: 1em;
@@ -113,11 +113,12 @@
 }
 #content .tl-element{
     position: relative;
+    width: 96%;
     padding-top: 30px;
     padding-bottom: 30px;
     border-bottom: 1px dashed #707070;
     margin-right: 20px;
-    display: flex;
+    display: inline-block;
 }
 #content .tl-element::after{
     content: '';
@@ -127,6 +128,9 @@
     position: absolute;
     left: -35px;
     top: 20px;
+}
+#content .block-info{
+    display: flex;
 }
 #content .element-date{
     display: inline-block;
@@ -153,6 +157,7 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1.3em;
+    
 }
 #content .element-subtitle{
     font-weight: 400;
@@ -220,12 +225,12 @@
         padding: 0;
     }
     #content .timeline-title-description{
+        width: 96%;
         border-bottom: 1px dashed #707070;
     }
-    #content .tl-element{
+    #content .block-info{
         display: inline-block;
         margin-right: 0;
-        padding-top: 20px;
     }
     #content .tl-element::after{
         display: none;
@@ -240,7 +245,7 @@
         top: 0;
     }
     #content .element-img{
-        padding-top: 40px;
+        padding-top: 30px;
         display: inline-block;
         margin-left: auto;
         margin-right: auto;
@@ -286,12 +291,12 @@
     #content .timeline-title{
         margin-top: 0px;
     }
-    #content .tl-element{
+    #content .block-info{
         display: inline-block;
         margin-right: 0;
     }
     #content .element-img{
-        padding-top: 40px;
+        padding-top: 30px;
         display: inline-block;
         margin-left: auto;
         margin-right: auto;
