@@ -41,6 +41,7 @@
     color: white;
 }
 #content.daymode .about-wrapper{
+    transition: all 0.3s;
     color: #3f3f3f;
 }
 #content .about{
@@ -83,12 +84,15 @@
     color: 	rgb(181, 211, 29);
 }
 #content.daymode .about-bio a{
-    color: rgb(48, 59, 223);
+    color: #FF6663;
 }
 
 /**** CSS FOR PORTFOLIO PAGES ******/
 #content .portfolio{
     color: white;
+}
+#content.daymode .portfolio{
+    color: #3f3f3f;
 }
 #content .timeline-title{
     font-size: 2em;
@@ -142,6 +146,9 @@
     left: -180px;
     top: 35px;
 }
+#content.daymode .element-date{
+    color: #8b8b8b;
+}
 #content .element-date::after{
     content: '';
     width: 5px;
@@ -151,6 +158,10 @@
     left: 143px;
     top: 8px;
     z-index: 99;
+}
+#content.daymode .element-date::after{
+    transition: all 0.3s;
+    background: #931621
 }
 #content .element-title{
     font-weight: 700;
@@ -168,6 +179,9 @@
 }
 #content .element-description a{
     color: rgb(181, 211, 29);
+}
+#content.daymode .element-description a{
+    color: #FF6663;
 }
 #content .element-technologies{
     padding-top: 10px;
@@ -194,8 +208,15 @@
     margin-right: 10px;
     font-weight: 500;
 }
+#content.daymode .element-technologies table td a{
+    color: rgba(80, 80, 80, 0.85);
+    background: rgb(233, 233, 233);
+}
 #content .element-technologies table td a:hover{
     color: white;
+}
+#content.daymode .element-technologies table td a:hover{
+    color: #3f3f3f;
 }
 #content .element-img{
     display: inline-block;

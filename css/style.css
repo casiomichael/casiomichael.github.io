@@ -9,6 +9,7 @@ body{
 }
 
 body.daymode{
+    transition: all 0.3s;
     background: rgb(241,241,241);
 }
 

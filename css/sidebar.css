@@ -167,7 +167,7 @@ a[data-toggle="collapse"]{
 #sidebar.daymode ul li a:hover{
     color: black;
     background: rgba(251,251,251,0.3);
-    border-left-color: rgb(55,100,144);
+    border-left-color: #931621;
 }
 #sidebar.daymode .sidebar-icons{
     color: #727272;
@@ -213,7 +213,7 @@ a[data-toggle="collapse"]{
 /* CURRENT PAGE DAYMODE SETTINGS*/
 #sidebar.daymode ul li a.currentPage{
     color: black !important; 
-    border-left-color: rgb(55,100,144);
+    border-left-color: #931621;
     transition: all 0.3s; 
 }
 #sidebar.daymode ul li ul li a.currentSubpage{

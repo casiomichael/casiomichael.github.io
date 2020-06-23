@@ -184,7 +184,7 @@ a[data-toggle="collapse"]{
 #navbar.daymode ul li a:hover{
     color: black;
     background: rgba(251,251,251,0.3);
-    border-left-color: rgb(55,100,144);
+    border-left-color: #931621;
 }
 #navbar.daymode .navbar-elements{
     border-bottom: 1px solid rgb(200,200,200);
@@ -192,7 +192,7 @@ a[data-toggle="collapse"]{
 #navbar.daymode .navbar-elements.collapsed{
     border-bottom: 0px solid rgb(35,35,35);
 }
-#navbar.daymode .navbar-button{
+#navbar.daymode .navbar-button a{
     color: #727272;
 }
 #navbar.daymode .navbar-button a:hover{
@@ -236,7 +236,7 @@ a[data-toggle="collapse"]{
 /* CURRENT PAGE DAYMODE SETTINGS*/
 #navbar.daymode ul li a.currentPage{
     color: black !important; 
-    border-left-color: rgb(55,100,144);
+    border-left-color: #931621;
     transition: all 0.3s; 
 }
 #navbar.daymode ul li ul li a.currentSubpage{

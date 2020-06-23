@@ -25,6 +25,14 @@ $(document).ready(function () {
     if (($('#sidebar').hasClass('daymode') == true && $('#navbar').hasClass('daymode') == true) && $('content').hasClass('daymode') == false) {
         $('#content').addClass('daymode');
     }
+    
+    // ENSURES CLASSES ARE CONSISTENT
+    if ($('#sidebar').hasClass('active')){
+        $('#content').addClass('expand');
+    }
+    if ($('#content').hasClass('expand')){
+        $('#sidebar').addClass('active');
+    }
 
     // KEEPS SUBMENU EXPANDED IF CURRENT PAGE
     if ($('#nav-exp-dropdown').hasClass('currentPage') || $('#sidebar-exp-dropdown').hasClass('currentPage')) {
