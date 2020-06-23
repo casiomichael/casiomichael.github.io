@@ -12,6 +12,10 @@ function checkCorrectStates() {
         $('#content').removeClass();
         $('#sidebar').removeClass('active');
     }
+    // ENSURES CLASSES ARE CORRECT FOR DAYMODE/NIGHTMODE
+    if (($('#sidebar').hasClass('daymode') == true && $('#navbar').hasClass('daymode') == true) && $('content').hasClass('daymode') == false) {
+        $('#content').addClass('daymode');
+    }
 }
 
 window.addEventListener("resize", checkCorrectStates);

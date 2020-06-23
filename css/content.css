@@ -41,7 +41,6 @@
     color: white;
 }
 #content.daymode .about-wrapper{
-    transition: all 0.3s;
     color: #3f3f3f;
 }
 #content .about{
