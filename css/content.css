@@ -218,6 +218,29 @@
     #content{
         margin-left: 0px;
     }
+    #content .about-wrapper{
+        display: inline-block;
+    }
+    #content .about{
+        display: block;
+        height: auto;
+    }
+    #content .about-image{
+        height: auto !important;
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #content .about .about-image img{
+        width: 90vw;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #content .about-description{
+        padding-top: 10px;
+        margin: 0;
+    }
     #content .timeline{
         margin-left: 0;
     }
