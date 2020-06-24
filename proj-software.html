@@ -15,10 +15,64 @@
     <!-- Other CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/mobile-navbar.css">
 </head>
 
 <body id="body">
+    <div class="navbar-wrapper">
+        <nav id="navbar">
+            <div class="navbar-button">
+                <div class="navbar-socials">
+                    <a href="/index.html"><i class="fas fa-home"></i></a>
+                    <a style="padding-left:5px" href="mailto:casiomichael@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a style="padding-left:5px;" href="https://linkedin.com/in/michaelcasio" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a style="padding-left:5px;" href="https://github.com/casiomichael" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                </div>
+                <button type="button" id="navbarCollapse" class="btn btn-info">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="navbar-elements collapsed" id="navbar-elements">
+                <div class="navbar-avatar"><img src="/images/headshot2.JPG" alt="navbar-Avatar"></div>
+                <div class="navbar-header"><a href="/index.html">Michael Casio</a></div>
+                <div class="navbar-title">Electrical/Computer Engineer</div>
+                <ul class="lisst-unstyled components">
+                    <!-- About Me -->
+                    <li><a href="/about.html">About</a></li>
+                    <!-- Experiences -->
+                    <li>
+                        <a href="#nav-expSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle" id="nav-exp-dropdown">Experiences</a>
+                        <ul class="collapse list-unstyled" id="nav-expSubmenu">
+                            <li><a href="/exp-eng.html">Engineering</a></li>
+                            <li><a href="/exp-noneng.html">Non-Engineering</a></li>
+                        </ul>
+                    </li>
+                    <!-- Projects -->
+                    <li>
+                        <a href="#nav-projSubmenu" data-toggle="collapse" aria-expanded="false" 
+                            class="dropdown-toggle currentPage" id="nav-proj-dropdown">Projects</a>
+                        <ul class="collapse list-unstyled" id="nav-projSubmenu">
+                            <li><a href="/proj-hardware.html">Hardware</a></li>
+                            <li><a href="/proj-software.html" class="currentSubpage">Software</a></li>
+                        </ul>
+                    </li>
+                    <!-- Contact -->
+                    <li><a href="/contact.html">Contact</a></li>
+                    <div class="navbar-nightmode">
+                        <button type="button" id="nav-nightmode-toggle" class="btn btn-info">
+                            <i class="fas fa-moon"></i> Dark mode
+                        </button>
+                    </div>
+
+            </div>
+        </nav>
+    </div>
     <div class="wrapper">
         <nav id="sidebar">
             <div class="sidebar-button">
@@ -34,18 +88,18 @@
                 <li><a href="/about.html">About</a></li>
                 <!-- Experiences -->
                 <li>
-                    <a href="#expSubmenu" data-toggle="collapse" aria-expanded="false"
-                        class="dropdown-toggle" id="exp-dropdown">Experiences</a>
-                    <ul class="collapse list-unstyled" id="expSubmenu">
+                    <a href="#sidebar-expSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle" id="sidebar-exp-dropdown">Experiences</a>
+                    <ul class="collapse list-unstyled" id="sidebar-expSubmenu">
                         <li><a href="/exp-eng.html">Engineering</a></li>
                         <li><a href="/exp-noneng.html">Non-Engineering</a></li>
                     </ul>
                 </li>
                 <!-- Projects -->
                 <li>
-                    <a href="#projSubmenu" data-toggle="collapse" aria-expanded="false"
-                        class="dropdown-toggle currentPage" id="proj-dropdown">Projects</a>
-                    <ul class="collapse list-unstyled" id="projSubmenu">
+                    <a href="#sidebar-projSubmenu" data-toggle="collapse" aria-expanded="false" 
+                        class="dropdown-toggle currentPage" id="side-proj-dropdown">Projects</a>
+                    <ul class="collapse list-unstyled" id="sidebar-projSubmenu">
                         <li><a href="/proj-hardware.html">Hardware</a></li>
                         <li><a href="/proj-software.html" class="currentSubpage">Software</a></li>
                     </ul>
@@ -68,85 +122,181 @@
         </nav>
 
         <div id="content">
-            <h2>Software Projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                sapien
-                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                accumsan
-                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                ultricies
-                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                diam
-                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                ultricies mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                sapien
-                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                accumsan
-                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                ultricies
-                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                diam
-                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                ultricies mi.</p>
-            <div class="line"></div>
-            <h3>Subparagraph</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                sapien
-                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                accumsan
-                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                ultricies
-                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                diam
-                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                ultricies mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                sapien
-                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                accumsan
-                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                ultricies
-                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                diam
-                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                ultricies mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Quis hendrerit dolor magna eget.
-                Scelerisque felis imperdiet proin fermentum. Aliquet porttitor lacus luctus accumsan tortor. Dui
-                sapien
-                eget mi proin. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Mattis
-                ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet porttitor lacus luctus
-                accumsan
-                tortor posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Diam maecenas
-                ultricies
-                mi eget mauris pharetra et. Mus mauris vitae ultricies leo integer malesuada. Interdum consectetur
-                libero id faucibus nisl tincidunt eget nullam. Eu mi bibendum neque egestas. Vitae et leo duis ut
-                diam
-                quam nulla porttitor massa. Nulla malesuada pellentesque elit eget gravida. Pharetra massa massa
-                ultricies mi.</p>
-
+            <div class="portfolio">
+                <div class="timeline-title">Software Projects </div>
+                <div class="timeline-title-description">See different software projects I've completed in my spare time and during my time at Duke.</div>
+                <div class="timeline">
+                    <ul>
+                        <li class="tl-element" id="website">
+                            <div class="element-date">05/2020 - 06/2020</div>
+                            <div class="element-title">Personal Website</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Responsive website using Bootstrap, HTML, CSS, Javascript, jQuery, and P5.js</div>
+                                    <div class="element-description">
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Technologies</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="#website">HTML</a></td>
+                                                <td><a href="#website">CSS</a></td>
+                                                <td><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></td>
+                                                <td><a href="https://www.javascript.com/" target="_blank">Javascript</a></td>
+                                                <td><a href="https://jquery.com/" target="_blank">JQuery</a></td>
+                                                <td><a href="https://p5js.org/" target="_blank">P5.js</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tl-element" id="soft-heart">
+                            <div class="element-date">03/2020 - 04/2020</div>
+                            <div class="element-title">Responsive Heart</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Software version of hardware project designed for ECE 364: Performance and Technology</div>
+                                    <div class="element-description">
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Technologies</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="https://www.javascript.com/" target="_blank">Javascript</a></td>
+                                                <td><a href="https://p5js.org/" target="_blank">P5.js</a></td>
+                                                <td><a href="https://threejs.org/" target="_blank">three.js</a></td>
+                                                <td><a href="https://www.tensorflow.org/js" target="_blank">TensorFlow.js</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="element-img">
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tl-element" id="sonar">
+                            <div class="element-date">09/2019 - 12/2019</div>
+                            <div class="element-title">Ocean Mapping via sonar</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Data analysis program for ECE 461: Ocean Engineering</div>
+                                    <div class="element-description">
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Technologies and Skills</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="https://www.mathworks.com/products/matlab.html" target="_blank">MATLAB</a></td>
+                                                <td><a href="https://www.gnu.org/software/bash/" target="_blank">Bash</a></td>
+                                                <td><a href="#sonar">Soldering</a</td>
+                                                <td><a href="#sonar">Circuiting</a></td>
+                                                <td><a href="#sonar">Prototyping</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="element-img">
+                                </div>
+                            </div>
+                        </li>                        
+                        <li class="tl-element" id="faults">
+                            <div class="element-date">09/2019 - 11/2019</div>
+                            <div class="element-title">SimpleScalar Fault Injection Study</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Program that simulates single-event upsets (SEUs) in SimpleScalar</div>
+                                    <div class="element-description">
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Technologies and Skills</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="#faults">C</a></td>
+                                                <td><a href="https://www.gnu.org/software/bash/" target="_blank">Bash</a></td>
+                                                <td><a href="#faults">Computer Architecture</a</td>
+                                                <td><a href="#faults">Fault Injection</a></td>
+                                                <td><a href="http://www.simplescalar.com/" target="_blank">SimpleScalar</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tl-element" id="coordination">
+                            <div class="element-date">07/2019</div>
+                            <div class="element-title">Revit MEP Coordination Tool</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Coordination tool similar to Navisworks, but compatible with Revit</div>
+                                    <div class="element-description">
+                                        
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Technologies and Skills</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="https://dynamobim.org/" target="_blank">Dynamo</a></td>
+                                                <td><a href="https://www.python.org/" target="_blank">Python</a></td>
+                                                <td><a href="https://www.autodesk.com/products/revit/overview" target="_blank">Revit</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="element-img">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tl-element" id="tower-defense">
+                            <div class="element-date">01/2019 - 05/2019</div>
+                            <div class="element-title">FPGA Tower Defense</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Duke-themed tower defense game built with Assembly and Verilog</div>
+                                    <div class="element-description">
+                                        
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Technologies and Skills</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="https://www.verilog.com/" target="_blank">Verilog</a></td>
+                                                <td><a href="#tower-defense">Assembly</a</td>
+                                                <td><a href="#tower-defense">Soldering</a></td>
+                                                <td><a href="#tower-defense">Circuiting</a></td>
+                                                <td><a href="#tower-defense">FPGA</a></td>
+                                                <td><a href="#tower-defense">Computer Architecture</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="element-img">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tl-element" id="paths">
+                            <div class="element-date">11/2018 - 12/2018</div>
+                            <div class="element-title">Multi-Robot Path Planner</div>
+                            <div class="block-info">
+                                <div class="element-contents">
+                                    <div class="element-subtitle">Path planning script written in Python with robotics use-cases</div>
+                                    <div class="element-description">
+                                    </div>
+                                    <div class="element-technologies">
+                                        <div class="technologies-title">Technologies</div>
+                                        <table>
+                                            <tr>
+                                                <td><a href="https://www.python.org/" target="_blank">Python</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
 
@@ -166,57 +316,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // STORES COOKIES TO REMEMBER STATE ON PAGE REFRESH
-            var nightmode_class = Cookies.get('nightmode_class');
-            if (nightmode_class) {
-                $('#sidebar').attr('class', nightmode_class);
-            }
-
-            // CHANGES ICONS FOR DAYMODE
-            if ($('#sidebar').hasClass('daymode')) {
-                $('#nightmode-toggle').find("svg").attr('data-prefix', 'far');
-            }
-            else {
-                $('#nightmode-toggle').find("svg").attr('data-prefix', 'fas');
-            }
-
-            // ENSURES CLASSES ARE CORRECT FOR COLLAPSE
-            if ($('#sidebar').hasClass('active') == true && $('#content').hasClass('expand') == false) {
-                $('#content').addClass('expand');
-            }
-            else if ($('#sidebar').hasClass('active') == false && $('#content').hasClass('expand') == true) {
-                $('#sidebar').addClass('active');
-            }
-
-            // KEEPS SUBMENU EXPANDED IF CURRENT PAGE
-            if ($('#exp-dropdown').hasClass('currentPage')) {
-                $('#exp-dropdown').attr('aria-expanded', 'true');
-                $('#expSubmenu').addClass('show');
-            }
-            if ($('#proj-dropdown').hasClass('currentPage')) {
-                $('#proj-dropdown').attr('aria-expanded', 'true');
-                $('#projSubmenu').addClass('show');
-            }
-
-            // TOGGLES CLASSES
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $('#content').toggleClass('expand');
-            });
-            $('#nightmode-toggle').on('click', function () {
-                $('#sidebar').toggleClass('daymode');
-                if ($('#sidebar').hasClass('daymode')) {
-                    $('#nightmode-toggle').find("svg").attr('data-prefix', 'far');
-                }
-                else {
-                    $('#nightmode-toggle').find("svg").attr('data-prefix', 'fas');
-                }
-                Cookies.set('nightmode_class', $('#sidebar').attr('class'));
-            });
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="/js/cookies-n-clicks.js"></script>
+    <script src="/js/on-resize.js"></script>
 </body>
 
 </html>
