@@ -157,6 +157,16 @@ a[data-toggle="collapse"]{
     color: white;
 }
 
+#navbar .nav-last-updated{
+    float: right;
+    font-style: italic;
+    font-weight: 400;
+    text-align: right;
+    padding: 22px;
+    font-size: 0.8em;
+    color: #aaaaaaa9;
+}
+
 /* CURRENT PAGE SETTINGS */
 #navbar ul li a.currentPage{
     color: white !important; 
@@ -172,6 +182,10 @@ a[data-toggle="collapse"]{
     background: rgba(241,241,241,0.7);
     border-bottom: 0px solid rgb(200,200,200);
     color: #3f3f3f;
+}
+
+#navbar.daymode .nav-last-updated{
+    color: #7f7f7f;
 }
 
 #navbar.daymode .navbar-button{

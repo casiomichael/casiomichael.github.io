@@ -69,7 +69,10 @@
                             <i class="fas fa-moon"></i> Dark mode
                         </button>
                     </div>
-
+                    <div class="nav-last-updated">Last Updated:
+                        <script src="/js/last-updated.js"></script>
+                        <script>document.write(lastUpdated);</script>
+                    </div>
             </div>
         </nav>
     </div>
@@ -119,6 +122,10 @@
                     <i class="fas fa-moon"></i> Dark mode
                 </button>
             </div>
+            <div class="last-updated">Last Updated:
+                <script src="/js/last-updated.js"></script>
+                <script>document.write(lastUpdated);</script>
+            </div>
         </nav>
 
         <div id="content">
@@ -133,7 +140,15 @@
                             <div class="block-info">
                                 <div class="element-contents">
                                     <div class="element-subtitle">Monitor with speakers made from recycled parts</div>
-                                    <div class="element-description">
+                                    <div class="element-description">As classes transitioned online in mid-March 2020 due to the COVID-19 pandemic, I suddenly needed to 
+                                        move back home and leave the monitor I used for school and work at Duke. At home, my parents had an old monitor that I could use 
+                                        as I completed the semester. However, I later found this monitor had a faulty power supply, sometimes working and sometimes immediately
+                                        shutting down. 
+                                        <br><br>
+                                        Rather than purchasing a new monitor or new power supply to repair the monitor, I decided to salvage a screen from an old laptop
+                                        lying around the house and build one myself. Additionally, I added speakers from an old broken TV also lying around the house. 
+                                        With a new LCD screen controller, a cheap amplifier, and some MDF board, I was able to build a fully functioning HDMI monitor with
+                                        speakers. The entire build saved me money (totaling $30!) and gave me a fun mini project to do during a period of quarantine.
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Skills</div>
@@ -147,6 +162,7 @@
                                     </div>
                                 </div>
                                 <div class="element-img">
+                                    <img src="/images/monitor.jpg" alt="monitor">
                                 </div>
                             </div>
                         </li>
@@ -157,20 +173,32 @@
                                 <div class="element-contents">
                                     <div class="element-subtitle">Hardware designed for ECE 364: Performance and Technology</div>
                                     <div class="element-description">
+                                        One of the goals in Duke's ECE 364: Performance and Technology is to integrate hardware and software into performances. 
+                                        For our final project, groups were tasked with constructing a piece of technology and integrate into a performance that was
+                                        heart-themed. Because of the COVID-19 pandemic, my group was unable to complete this project due to Duke's transition 
+                                        to remote learning. We later transitioned this project into a software version, which can be seen in the 
+                                        <a href="/proj-software.html#soft-heart">Software Projects</a> page.
+                                        <br><br>
+                                        Nevertheless, with the heart theme, my group wanted to evoke senses of wandering, anxiety, frustration, and end with a sense of relief. 
+                                        To do this, we created a story in which one wandering performer would try to find her "compatible match." 
+                                        She did this by scanning other performers who are have a small LED circuit that was in the shape of a heart. The wandering performer 
+                                        used a small wireless RGB color sensor to scan the other performers, and this sensor communicated to the central wooden heart via
+                                        an Xbee serial communication protocol. The central wooden heart, which is a laser cut plywood that rotated around its axis via motors,
+                                        would light up its LED strips based on the "compatibility" that was scanned. It would respond with different LED patterns and colors.
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Skills</div>
                                         <table>
                                             <tr>
-                                                <td><a href="#heart">Soldering</a></td>
-                                                <td><a href="#heart">Circuiting</a></td>
-                                                <td><a href="#heart">Woodworking</a></td>
+                                                <td><a href="#hard-heart">Soldering</a></td>
+                                                <td><a href="#hard-heart">Circuiting</a></td>
+                                                <td><a href="#hard-heart">Laser Cutting</a></td>
                                             </tr>
                                         </table>
                                     </div>
                                 </div>
                                 <div class="element-img">
-                                    
+                                    <img src="/images/hard-heart.jpg" alt="hard-heart">
                                 </div>
                             </div>
                         </li>                        
@@ -181,6 +209,17 @@
                                 <div class="element-contents">
                                     <div class="element-subtitle">Smart utility glove for DIY projects, home renovations, and more</div>
                                     <div class="element-description">
+                                        For my senior design project in Duke's ECE 496: Wearable & Ubiquitous Computing, my design group and I designed and constructed a 
+                                        smart utility glove that is useful for DIY projects, home renovations, and more. 
+                                        <br><br>
+                                        In the DIY and construciton industries, users need various tools that take up space, weigh a lot, and can hinder a user's overall workflow.
+                                        Mitt Mates simplifies this workflow by integrating tools into the user's own work gloves. Each of the tools that we designed is its own
+                                        stand-along module, giving the user freedom to put any combination of tools they need for the job onto their personal glove. 
+                                        <br><br>
+                                        The detachable glove modules that we designed include: distance measurement, flashlights, water flow/pipe clog detector, and a live wire sensor.
+                                        We intended to include a stud finder, but failed to overcome some problems with its circuit over the course of the time constraint of the semester.
+                                        A introductory promotional video for Mitt Mates on its functionalities and use cases can be viewed 
+                                        in the following <a href="https://www.youtube.com/watch?v=Hgkn4OfyzqA" target="_blank">link.</a>
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Technologies and Skills</div>
@@ -195,6 +234,9 @@
                                         </table>
                                     </div>
                                 </div>
+                                <div class="element-img">
+                                    <img src="/images/mittmates.jpg" alt="mittmates">
+                                </div>
                             </div>
                         </li>
                         <li class="tl-element" id="patient-monitor">
@@ -204,20 +246,28 @@
                                 <div class="element-contents">
                                     <div class="element-subtitle">Low-cost patient monitor with ECG and pulse oximeter modules</div>
                                     <div class="element-description">
+                                        In developing countries, one of the main problems in hospitals is constant brownouts, resulting in a disruption in 
+                                        power supply to hospitals. This can turn off key medical equipment such as patient monitors. Additionally, hospitals in less developed
+                                        countries are not as well-funded as in developed countries, making it tough to get repairs or new equipment. For these reasons, 
+                                        we decided to try to design a low-cost patient monitor that would be easy to troubleshoot and reliable in the case of brownouts.
+                                        <br><br>
+                                        Before COVID-19, we were able to construct a working pulse oximeter prototype, which is similar to the design by 
+                                        <a href="https://swharden.com/wp/2013-04-14-simple-diy-ecg-pulse-oximeter-version-2/" target="_blank">Scott Harden.</a> 
+                                        We also made significant gains in the ECG module, but were unable to solder and put together the circuit to start testing because of
+                                        the COVID-19 pandemic. However, we planned on synthesizing these two modules and using an Arduino for signal processing and data visualization.
+                                        Because the main leads of the project (including me) have graduated, we intend to try to help the rising seniors in EWH finish our project.
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Technologies and Skills</div>
                                         <table>
                                             <tr>
                                                 <td><a href="https://www.arduino.cc/" target="_blank">Arduino</a></td>
-                                                <td><a href="#mittmates">Soldering</a</td>
-                                                <td><a href="#mittmates">Circuiting</a></td>
-                                                <td><a href="#mittmates">Prototyping</a></td>
+                                                <td><a href="#patient-monitor">Soldering</a</td>
+                                                <td><a href="#patient-monitor">Circuiting</a></td>
+                                                <td><a href="#patient-monitor">Prototyping</a></td>
                                             </tr>
                                         </table>
                                     </div>
-                                </div>
-                                <div class="element-img">
                                 </div>
                             </div>
                         </li>
@@ -228,20 +278,28 @@
                                 <div class="element-contents">
                                     <div class="element-subtitle">Arduino robot that can maneuver through an obstacle course</div>
                                     <div class="element-description">
-                                        
+                                        For ECE 110, Duke's introductory electrical engineering course, students were tasked with a half semester-long project in which 
+                                        groups of 2/3 needed to construct an Arduino robot that can maneuver through an obstacle course, complete specific tasks, and 
+                                        communicate to the rest of the other groups (about 4 other groups) information gained from each group's specific task.
+                                        <br><br>
+                                        During my semester, our robot needed to navigate through a Star Wars themed course and relay to other groups how many cannons the Death Star 
+                                        had. To do this, we needed to scan for RFID tags. We needed to then communicate this number to other groups, and as a giant group, we needed
+                                        to allow our robots to line up in a specific order based on the information we sent/received. Each semester, 
+                                        the class has a different obstacle course and theme. A demo for Fall 2019 is seen <a href="https://www.youtube.com/watch?v=EevVZm8uy78" target="_blank">here.</a>
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Technologies and Skills</div>
                                         <table>
                                             <tr>
                                                 <td><a href="https://www.arduino.cc/" target="_blank">Arduino</a></td>
-                                                <td><a href="#mittmates">Soldering</a</td>
-                                                <td><a href="#mittmates">Circuiting</a></td>
+                                                <td><a href="#idc">Soldering</a</td>
+                                                <td><a href="#idc">Circuiting</a></td>
                                             </tr>
                                         </table>
                                     </div>
                                 </div>
                                 <div class="element-img">
+                                    <img src="/images/idc.JPG" alt="idc">
                                 </div>
                             </div>
                         </li>
@@ -252,6 +310,15 @@
                                 <div class="element-contents">
                                     <div class="element-subtitle">LEGO Mindstorms Rubik's Cube Solver</div>
                                     <div class="element-description">
+                                        For my senior design project in high school, I decided to construct a LEGO Mindstorms robot that can solve a Rubik's cube. One of the objectives
+                                        of this project is to integrate Java, a common programming language taught in the high school and middle school levels, with LEGO Mindstorms, something
+                                        that is becoming commonly available in schools around the country. The purpose of this integration is to explore ways in which different secondary 
+                                        school classes can be integrated together.
+                                        <br><br>
+                                        Rubot scraps the standard LEGO operating system with <a href="http://www.lejos.org/" target="_blank">leJOS</a>, which allows Java integration into 
+                                        LEGO Mindstorms. Rubot scans the Rubik's cube for its current configuration, and the Mindstorms block takes in this input and runs it through a 
+                                        solving algorithm. After constructing this virtual version of the solved cube, Rubot starts using servos to turn and solve the cube.
+
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Technologies</div>
@@ -262,6 +329,9 @@
                                             </tr>
                                         </table>
                                     </div>
+                                </div>
+                                <div class="element-img">
+                                    <img src="/images/rubot.JPG" alt="rubot">
                                 </div>
                             </div>
                         </li>

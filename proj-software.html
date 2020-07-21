@@ -69,7 +69,10 @@
                             <i class="fas fa-moon"></i> Dark mode
                         </button>
                     </div>
-
+                    <div class="nav-last-updated">Last Updated:
+                        <script src="/js/last-updated.js"></script>
+                        <script>document.write(lastUpdated);</script>
+                    </div>
             </div>
         </nav>
     </div>
@@ -119,6 +122,10 @@
                     <i class="fas fa-moon"></i> Dark mode
                 </button>
             </div>
+            <div class="last-updated">Last Updated:
+                <script src="/js/last-updated.js"></script>
+                <script>document.write(lastUpdated);</script>
+            </div>
         </nav>
 
         <div id="content">
@@ -134,6 +141,13 @@
                                 <div class="element-contents">
                                     <div class="element-subtitle">Responsive website using Bootstrap, HTML, CSS, Javascript, jQuery, and P5.js</div>
                                     <div class="element-description">
+                                        Well, this feels like one of those Russian matryoshka dolls. Website in the website!!
+                                        <br><br>
+                                        During the COVID-19 pandemic, like many others, I baked bread and tried to learn new things.
+                                        One of the things I learned how to do during quarantine is creating websites hosted via Github. This involved learning things like 
+                                        HTML, CSS, Bootstrap, and Javascript. Though I wouldn't call myself a professional, I learned a variety of different things, which
+                                        can be seen by simply navigating through this portfolio website. I always want to improve and want to keep this up-to-date, so if you
+                                        find a bug or want me to improve something, feel free to <a href="/contact.html">contact me!</a>
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Technologies</div>
@@ -149,6 +163,9 @@
                                         </table>
                                     </div>
                                 </div>
+                                <div class="element-img">
+                                    <img src="/images/website.jpg" alt="website">
+                                </div>
                             </div>
                         </li>
                         <li class="tl-element" id="soft-heart">
@@ -158,6 +175,14 @@
                                 <div class="element-contents">
                                     <div class="element-subtitle">Software version of hardware project designed for ECE 364: Performance and Technology</div>
                                     <div class="element-description">
+                                        Because of COVID-19, my group's final project for ECE 364: Performance and Technology was transformed into a software version. 
+                                        The hardware version can be found in the <a href="/proj-hardware.html#hard-heart">Hardware Projects</a> page.
+                                        <br><br>
+                                        For this software version of the project, we wanted to make it interactive, but still evoke the emotion of wandering, anxiety,
+                                        questioning, and relief. Thus, we came up with a rotating visual heart that beats, repeats what a user tells it, and reacts. We used 
+                                        libraries like TensorFlow.js to perform a machine-learning sentiment analysis based on what the user says. This project can be found 
+                                        <a href="https://equality-perftech.github.io/clingy/" target="_blank">here.</a> It utilizes P5.js, Three.js and basic HTML/CSS, 
+                                        similar to this website that you're currently on!
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Technologies</div>
@@ -172,7 +197,7 @@
                                     </div>
                                 </div>
                                 <div class="element-img">
-                                    
+                                    <img src="/images/soft-heart.jpg" alt="soft-heart">
                                 </div>
                             </div>
                         </li>
@@ -183,6 +208,14 @@
                                 <div class="element-contents">
                                     <div class="element-subtitle">Data analysis program for ECE 461: Ocean Engineering</div>
                                     <div class="element-description">
+                                        Over the past few semesters, Duke students have been working on an ocean mapping device that uses SONAR. This device will eventually
+                                        be submitted to the XPrize competition as a tool that scientists and researchers can use to help map the depths of the ocean.
+                                        <br><br>
+                                        For the Fall 2019 semester of Duke's ECE 461: Ocean Engineering, the ocean mapping team that I was a part of focused on debugging 
+                                        analog circuits that were damaged due to mishandling, simplifying documentation, and writing programs for collecting, and processing data.
+                                        One of my main contributions to the project was developing Bash scripts that automates creates, analyzes, and visualizes graphs/raw data collected. 
+                                        This involved parsing through most of the noise collected from the device receivers. An example of this signal processing can be found in the image
+                                        displayed.
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Technologies and Skills</div>
@@ -198,6 +231,7 @@
                                     </div>
                                 </div>
                                 <div class="element-img">
+                                    <img src="/images/sonar-data.jpg" alt="sonar-data">
                                 </div>
                             </div>
                         </li>                        
@@ -208,6 +242,14 @@
                                 <div class="element-contents">
                                     <div class="element-subtitle">Program that simulates single-event upsets (SEUs) in SimpleScalar</div>
                                     <div class="element-description">
+                                        For my final project in ECE 552: Advanced Computer Architecture and ECE 554: Fault Tolerant Computing Systems, I did a study of
+                                        single-event upsets (SEUs) using <a href="http://www.simplescalar.com/" target="_blank">SimpleScalar.</a> SEUs
+                                        are common due to alpha and cosmic particles. This means that mission-critical computing systems such as those in the International
+                                        Space Station, or satellites/aircraft need to be properly protected with redundancy and design to tolerate soft-errors such as bit-flips. 
+                                        <br><br>
+                                        In this study, I analyze the probablity of an error occuring in the event of a bit-flip. This is tested with different computer architectures
+                                        varying in Register Update Unit (RUU) size, fault location (register file, ALUs, instruction decoder, etc.). This simulation/study 
+                                        can be used in future work to determine where design companies would need to invest time/money for redundancy. 
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Technologies and Skills</div>
@@ -231,7 +273,17 @@
                                 <div class="element-contents">
                                     <div class="element-subtitle">Coordination tool similar to Navisworks, but compatible with Revit</div>
                                     <div class="element-description">
-                                        
+                                        During my <a href="/exp-eng.html#bh-intern">Buro Happold internship</a> one of the main things I did was working on Building
+                                        Information Modeling (BIM) coordination, where I made sure that mechanical ducts, electrical conduits, pipes, etc. weren't running 
+                                        into each other. In the MEP industry, Autodesk's program 
+                                        <a href="https://www.autodesk.com/products/navisworks/overview" target="_blank">Navisworks</a> automates this identification of clashes 
+                                        and interference problems before construction. However, the limitation with Navisworks is that designers usually work through AutoCAD or Revit.
+                                        A fix in clashes in Navisworks would require you to also fix it in the building's Revit model. This wastes time and money because it doubles the work.
+                                        <br><br>
+                                        As a solution, collaborating with a Kayleigh Houde, the computational lead at Buro Happold, we designed a Dynamo/Python script that can detect these 
+                                        clashes. Because Dynamo is built into Revit, whatever clash is fixed in the model is already fixed. This prevents things like learning how to use
+                                        Navisworks, switching from program to program, etc. After a group of engineers used this tool for about two weeks, it was determined that this
+                                        saved the company over $11,500 and over 100 hours of coordination time. 
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Technologies and Skills</div>
@@ -245,6 +297,7 @@
                                     </div>
                                 </div>
                                 <div class="element-img">
+                                    <img src="/images/coordination.PNG" alt="coordination">
                                 </div>
                             </div>
                         </li>
@@ -255,7 +308,15 @@
                                 <div class="element-contents">
                                     <div class="element-subtitle">Duke-themed tower defense game built with Assembly and Verilog</div>
                                     <div class="element-description">
-                                        
+                                        As a final project for Duke's ECE 350: Digital Systems, we needed to design and construct something using an FPGA that runs our own 
+                                        custom 32-bit word-addressed, 5-stage pipelined processor written in Verilog. Through this processor, we needed to write assembly code 
+                                        to run our programs. For my partner and I's project, we decided to build a tower defense game. Because Duke's basketball team that 
+                                        school year consisted of Zion Williamson, RJ Barrett, and Cam Reddish, we decided to make our tower defense game Duke-basketball themed.
+                                        <br><br>
+                                        This project involved creating various test benches and wave form tests to determine the processor's functionality. Furthermore, 
+                                        this project used a VGA output to display the game, and we created a custom 3D-printed GameBoy-like controller for player movement. The 
+                                        game included multiple maps, characters, towers, power-ups, etc. We used assembly code to handle game logic such as point calculation,
+                                        collision detection, etc. 
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Technologies and Skills</div>
@@ -271,8 +332,6 @@
                                         </table>
                                     </div>
                                 </div>
-                                <div class="element-img">
-                                </div>
                             </div>
                         </li>
                         <li class="tl-element" id="paths">
@@ -282,6 +341,14 @@
                                 <div class="element-contents">
                                     <div class="element-subtitle">Path planning script written in Python with robotics use-cases</div>
                                     <div class="element-description">
+                                        As a final project for Duke's ECE 383: Robotics and Automation, I needed to design and build a robot-path planner that would allow
+                                        multiple robots to navigate a grid, such as those that navigate automated warehouses, without self nor object collision. 
+                                        <br><br>
+                                        This path planner was written as a Python script, and mainly utilized a breath-first-search approach. During this process, I considered
+                                        different planning algorithms like Dijkstra's, but ultimately found that the best approach was breath-first-search because nodes
+                                        didn't have weights. Additionally, this algorithm and path planner accounted for small hallways (in a one lane hallway, how do you determine
+                                        which robot navigates through the hallway first?). This algorithm accounted for determining necessary pauses for robots in case its planned
+                                        path collided with that of another.
                                     </div>
                                     <div class="element-technologies">
                                         <div class="technologies-title">Technologies</div>
@@ -291,6 +358,9 @@
                                             </tr>
                                         </table>
                                     </div>
+                                </div>
+                                <div class="element-img">
+                                    <img src="/images/path-plan.JPG" alt="path-plan">
                                 </div>
                             </div>
                         </li>
