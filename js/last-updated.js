@@ -1,1 +1,1 @@
-var lastUpdated = "July 2020";
+var lastUpdated = "August 2020";
